@@ -28,3 +28,4 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         dokku-host: 'dokku.seniorsoftwarevlogger.com'
         app-name: 'ityoutubers'
+        git-push-flags: '--force'
