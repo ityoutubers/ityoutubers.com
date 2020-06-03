@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.tags-list {
+    margin-bottom: $base*15;
+    border-top: 1px solid $color-gray;
+
+    &__group {
+        display: flex;
+        align-items: center;
+        padding-top: $base*5;
+        padding-bottom: $base*5;
+        border-bottom: 1px solid $color-gray;
+
+        &-title {
+            min-width: $base*50;
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
+        }
+
+        &-content {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-title {
+                margin-bottom: $base*2;
+            }
+        }
+    }
+}
+
+.tag-item {
+    margin: $base $base*2 $base 0;
+
+    &__button {
+        display: block;
+        padding: $base $base*2;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+        color: $color-black;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $color-gray;
+        border-radius: $base;
+        outline: none;
+        transition: $transition-duration;
+
+        &--active {
+            color: $color-white;
+            background-color: $color-red;
+            border-color: $color-red;
+        }
+
+        &:hover:not(&--active) {
+            border-color: $color-black;
+        }
+    }
+}
