@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.channels-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 25%;
+        padding: $base*2 $base*2 $base*2 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @media (max-width: $screen-lg-max) {
+            width: 33.33%;
+        }
+
+        @media (max-width: $screen-md-max) {
+            width: 50%;
+        }
+
+        &-link {
+            font-size: $font-size-md;
+            color: $color-black;
+            text-decoration: none;
+            transition: $transition-duration;
+
+            svg {
+                margin-right: $base*2;
+
+                path {
+                    fill: $color-gray;
+                    transition: $transition-duration;
+                }
+            }
+
+            &:hover {
+                color: $color-red;
+
+                path {
+                    fill: $color-red;
+                }
+            }
+        }
+    }
+
+    &--empty {
+        padding: $base*2 0;
+        font-size: $font-size-md;
+    }
+}
