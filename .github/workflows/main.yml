@@ -19,7 +19,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+      with:
+        fetch-depth: "0" # to avoid shallow history error
+          
     - name: Dokku Deploy action
       uses: idoberko2/dokku-deploy-github-action@v1
       with:
