@@ -2,19 +2,68 @@
 <html lang="ru-RU">
   <head>
     <meta charset="UTF-8" />
-    <title>IT YouTubers RU - скоро</title>
-    <link rel="icon" type="image/png" href="https://ityoutubers.ru/fav.png" />
-    <style type="text/css">
-      body {
-        margin: 0;
-        background: url(ityoutubers-ru-logo.png) center center no-repeat;
-        background-size: contain;
-        width: 100%;
-        height: 100vh;
-      }
-    </style>
+    <title>ITYouTubers — сообщество создателей IT контента</title>
+    <script src="/lib/handlebars.js"></script>
+
+    <link rel="icon" type="image/png" href="https://ityoutubers.com/fav.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <script>
+      // Во ты выпал от хэндлебарс, да? :)
+      Handlebars.registerHelper('humanNumber', function (value) {
+        const num = parseInt(value, 10);
+        const lookup = [
+          { value: 1, symbol: "" },
+          { value: 1e3, symbol: "k" },
+          { value: 1e6, symbol: "M" },
+          { value: 1e9, symbol: "G" },
+          { value: 1e12, symbol: "T" },
+          { value: 1e15, symbol: "P" },
+          { value: 1e18, symbol: "E" }
+        ];
+        const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+        var item = lookup.slice().reverse().find(function(item) {
+          return num >= item.value;
+        });
+        return item ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol : "0";
+      });
+
+      let template = Handlebars.compile(`
+      {{#each channels}}
+        <div class="grid grid-cols-3 gap-8">
+          <div class="col-span-1">
+            <a href="https://youtube.com/channel/{{ id }}"><img class="rounded-full w-40" src="{{ snippet.thumbnails.medium.url }}" /></a> 
+          </div>
+          <div class="col-span-2">
+            <a href="https://youtube.com/channel/{{ id }}">{{ snippet.title }}</a> 
+            <p>{{ snippet.customUrl }} • {{ humanNumber statistics.subscriberCount }}</p>
+            <p class="line-clamp-3">{{ snippet.description }}</p>
+          </div>
+        </div>
+      {{/each}}
+      `);
+
+      fetch('/dist/channels-slim.json')
+        .then((response) => response.json())
+        .then((channels) => channels.sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1))
+        .then((channels) => document.getElementById("channels").innerHTML = template({channels: channels}));
+    </script>
   </head>
   <body>
+    <div class="container mx-auto pb-20">
+      <h1 class="pb-10 pt-5">
+        <img style="width: 400px;" src="./ityoutubers-logo.jpg" />
+      </h1>
+      <p class="w-1/2 mb-20">
+        ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
+      </p>
+
+      <div id="channels" class="grid grid-cols-2 gap-8">
+
+      </div>
+
+      <p class="pt-5" style="margin-top: 100px;">Сделано с помощью 💩 & 🪵 в 2022</p>
+    </div>
+
     <!-- Start of HubSpot Embed Code -->
     <script
       type="text/javascript"
