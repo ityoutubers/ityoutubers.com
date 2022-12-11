@@ -1,2 +1,2 @@
-# ITYouTubersRU ![CI](https://github.com/ityoutubers-ru/ityoutubers.ru/workflows/CI/badge.svg)
+# ITYouTubers ![CI](https://github.com/ityoutubers/ityoutubers.com/workflows/CI/badge.svg)
 
