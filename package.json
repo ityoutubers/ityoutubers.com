@@ -1,25 +1,18 @@
 {
   "name": "ityoutubers.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "python3 -m http.server"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ityoutubers/ityoutubers.com.git"
-  },
-  "author": "",
-  "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/ityoutubers/ityoutubers.com/issues"
-  },
-  "homepage": "https://github.com/ityoutubers/ityoutubers.com#readme",
   "dependencies": {
-    "@googleapis/youtube": "^8.0.0",
-    "@notionhq/client": "^2.2.2",
-    "dotenv": "^16.0.3"
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
