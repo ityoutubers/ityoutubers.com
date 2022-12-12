@@ -2,6 +2,9 @@
   "name": "ityoutubers.com",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=15"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
