@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>ITYouTubers — сообщество создателей IT контента</title>
         <link rel="icon" type="image/png" href="/fav.png" />
       </Head>
@@ -38,7 +38,7 @@ export default function Home() {
             ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
           </p>
 
-          <div id="channels" className="grid grid-cols-2 gap-8">
+          <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {channels
               .sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
               .map(({id, snippet, statistics}) => 
@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="col-span-2">
                   <a href={`https://youtube.com/channel/${id}`}>{snippet.title}</a> 
                   <p>{snippet.customUrl} • {humanNumber(statistics.subscriberCount)}</p>
-                  <p className="line-clamp-3">{snippet.description}</p>
+                  <p className="line-clamp-4 text-xs">{snippet.description}</p>
                 </div>
               </div>
             )}
