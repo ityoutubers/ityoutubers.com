@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import channels from './api/data/channels-slim.json'
+import channels from './api/data/channels.json'
 
 function humanNumber (value) {
   const num = parseInt(value, 10);
