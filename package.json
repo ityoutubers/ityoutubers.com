@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "task:update": "node ./scrapper.js > ./pages/api/data/channels.json && npm run build"
   },
   "dependencies": {
     "eslint": "8.29.0",
