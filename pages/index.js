@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import _ from 'lodash'
 import channels from './api/data/channels.json'
 
 function humanNumber (value) {
@@ -21,6 +22,12 @@ function humanNumber (value) {
 }
 
 export default function Home() {
+  const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
+  const channelsSortedBySubs = channels.sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
+  const [activeChannels, inactiveChannels] = _.partition(channelsSortedBySubs, (channel) => 
+    channel.lastVideo?.publishedAt
+      && Date.parse(channel.lastVideo?.publishedAt) > oneYearAgoDate);
+
   return (
     <div>
       <Head>
@@ -29,27 +36,42 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/fav.png" />
       </Head>
 
-      <main>
-        <div className="container mx-auto pb-20">
-          <h1 className="pb-10 pt-5">
+      <main className="prose max-w-none">
+        <div className="container mx-auto pb-20 px-5">
+          <h1 className="">
             <Image width="400" height="98" alt="IT Youtubers" src="/ityoutubers-logo.jpg" />
           </h1>
-          <p className="w-1/2 mb-20">
+          <p className="w-1/2">
             ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
           </p>
 
-          <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {channels
-              .sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
+          <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+            {activeChannels
               .map(({id, snippet, statistics}) => 
               <div key={id} className="grid grid-cols-3 gap-8">
-                <div className="col-span-1">
-                  <a href={`https://youtube.com/channel/${id}`}><Image width={144} height={144} alt="" className="rounded-full w-40" src={snippet.thumbnails.medium.url} /></a> 
+                <div className="col-span-1 not-prose">
+                  <a href={`https://youtube.com/channel/${id}`}><Image width={144} height={144} alt="" className="rounded-full" src={snippet.thumbnails.medium.url} /></a> 
                 </div>
                 <div className="col-span-2">
-                  <a href={`https://youtube.com/channel/${id}`}>{snippet.title}</a> 
-                  <p>{snippet.customUrl} • {humanNumber(statistics.subscriberCount)}</p>
-                  <p className="line-clamp-4 text-xs">{snippet.description}</p>
+                  <a href={`https://youtube.com/channel/${id}`}>{snippet.title} • {humanNumber(statistics.subscriberCount)}</a> 
+                  <p className="line-clamp-6 text-xs">{snippet.description}</p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <h2>Каналы, которые больше года не выпускают видео</h2>
+
+          <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {inactiveChannels
+              .map(({id, snippet, statistics}) => 
+              <div key={id} className="grid grid-cols-3 gap-8">
+                <div className="col-span-1 not-prose">
+                  <a href={`https://youtube.com/channel/${id}`}><Image width={144} height={144} alt="" className="rounded-full" src={snippet.thumbnails.medium.url} /></a> 
+                </div>
+                <div className="col-span-2">
+                  <a href={`https://youtube.com/channel/${id}`}>{snippet.title} • {humanNumber(statistics.subscriberCount)}</a> 
+                  <p className="line-clamp-4 mt-2 text-xs">{snippet.description}</p>
                 </div>
               </div>
             )}
