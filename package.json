@@ -13,6 +13,8 @@
     "task:update": "node ./scrapper.js > ./pages/api/data/channels.json && npm run build"
   },
   "dependencies": {
+    "@googleapis/youtube": "^8.0.0",
+    "@notionhq/client": "^2.2.2",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "lodash": "^4.17.21",
