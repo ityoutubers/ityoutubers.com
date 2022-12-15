@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import _ from 'lodash'
+import channels from '../pages/api/channels.json'
 
 function humanNumber (value) {
   const num = parseInt(value, 10);
@@ -31,7 +32,7 @@ async function getData() {
 }
 
 export default async function Page() {
-  const channels = await getData();
+  // const channels = await getData();
   const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
   const channelsSortedBySubs = channels.sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
   const [activeChannels, inactiveChannels] = _.partition(channelsSortedBySubs, (channel) => 
