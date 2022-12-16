@@ -2,6 +2,7 @@ require("dotenv").config({path: "./.env.local"});
 
 const { youtube } = require("@googleapis/youtube");
 const { Client } = require("@notionhq/client");
+const fs = require("fs/promises");
 
 const notion = new Client({
   auth: process.env.NOTION_API_KEY,
@@ -10,6 +11,10 @@ const youtubeApi = youtube({
   version: "v3",
   auth: process.env.GOOGLE_API_KEY,
 });
+
+async function getTopicsQuery(start_cursor, database_id = process.env.NOTION_TOPICS_DB_UID) {
+  return notion.databases.query({ database_id, start_cursor })
+}
 
 async function getActiveMembersQuery(start_cursor, database_id = process.env.NOTION_DB_UID) {
   return notion.databases.query({
@@ -24,21 +29,34 @@ async function getActiveMembersQuery(start_cursor, database_id = process.env.NOT
   })
 }
 
-async function getActiveMembers() {
+async function getPaginatedData(queryFunc) {
   let items = [];
 
-  let page = await getActiveMembersQuery();
+  let page = await queryFunc();
   items = page.results;
 
   while(page.has_more) {
-    page = await getActiveMembersQuery(page.next_cursor);
+    page = await queryFunc(page.next_cursor);
     items = items.concat(page.results);
   }
 
   return items;
 }
 
-async function main(params) {
+async function getActiveMembers() {
+  return await getPaginatedData(getActiveMembersQuery);
+}
+
+async function getTopics() {
+  const topics = (await getPaginatedData(getTopicsQuery)).map(topic => ({
+    id: topic.id,
+    name: topic.properties.Name.title[0]?.plain_text
+  }));
+
+  return topics;
+}
+
+async function getYouTubeChannels() {
   let youtubeChannels = [];
 
   const idsLens = item => item.properties['Channel ID'].rich_text[0]?.plain_text;
@@ -83,7 +101,10 @@ async function main(params) {
     ytChannel['topics'] = topics[ytChannel.id];
   });
 
-  console.log(JSON.stringify(youtubeChannels));
+  return youtubeChannels;
 }
 
-main().catch(console.error);
+Promise.all([
+  getTopics().then(data => fs.writeFile("./pages/api/topics.json", JSON.stringify(data))),
+  getYouTubeChannels().then(data => fs.writeFile("./pages/api/channels.json", JSON.stringify(data)))
+]).catch(console.error)
