@@ -21,18 +21,7 @@ function humanNumber (value) {
   return item ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol : "0";
 }
 
-async function getData() {
-  const res = await fetch(`${process.env.HOST}/api/channels`, { next: {revalidate: 24 * 60 * 60}});
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
-}
-
 export default async function Page() {
-  // const channels = await getData();
   const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
   const channelsSortedBySubs = channels.sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
   const [activeChannels, inactiveChannels] = _.partition(channelsSortedBySubs, (channel) => 
