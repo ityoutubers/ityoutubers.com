@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .tag {
-    @apply mr-2;
-    cursor: pointer;
+  .topics {
+    overflow: hidden;
   }
-  .tag.active {
+  .topic {
+    @apply pr-2;
+    cursor: pointer;
+    float: left;
+  }
+  .topic.active {
     @apply decoration-rose-600;
     @apply text-rose-600;
   }

@@ -47,8 +47,8 @@ export default function Page() {
           ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
         </p>
 
-        <div>
-          {topics.map(t => <a onClick={() => setTopic(topic == t.id ? "" : t.id)} className={topic == t.id ? "tag active" : "tag"} key={t.id}>{t.name}</a>)}
+        <div className='topics'>
+          {topics.map(t => <a onClick={() => setTopic(topic == t.id ? "" : t.id)} className={topic == t.id ? "topic active" : "topic"} key={t.id}>{t.name}</a>)}
         </div>
 
         <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -66,7 +66,7 @@ export default function Page() {
           )}
         </div>
 
-        {inactiveChannels > 0 ? <h2>Каналы, которые больше года не выпускают видео</h2> : <></>}
+        {inactiveChannels.length > 0 ? <h2>Каналы, которые больше года не выпускают видео</h2> : <></>}
 
         <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {inactiveChannels
