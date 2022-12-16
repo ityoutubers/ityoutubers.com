@@ -45,7 +45,7 @@ export default async function Page() {
         <h1 className="">
           <Image width="400" height="98" alt="IT Youtubers" src="/ityoutubers-logo.jpg" />
         </h1>
-        <p className="w-1/2">
+        <p className="md:w-2/3 lg:w-1/2">
           ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
         </p>
 
