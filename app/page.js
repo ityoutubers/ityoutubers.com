@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import _ from 'lodash'
 import channels from '../pages/api/channels.json'
+import topics from '../pages/api/topics.json'
 
 function humanNumber (value) {
   const num = parseInt(value, 10);
@@ -37,6 +38,10 @@ export default async function Page() {
         <p className="md:w-2/3 lg:w-1/2">
           ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
         </p>
+
+        <div>
+          {topics.map(topic => <a className='mr-2' key={topic.id} href={topic.id}>{topic.name}</a>)}
+        </div>
 
         <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           {activeChannels
