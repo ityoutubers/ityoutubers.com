@@ -1,5 +1,7 @@
-import Head from 'next/head'
+"use client";
+
 import Image from 'next/image'
+import React, { useState } from 'react';
 import _ from 'lodash'
 import channels from '../pages/api/channels.json'
 import topics from '../pages/api/topics.json'
@@ -22,9 +24,15 @@ function humanNumber (value) {
   return item ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol : "0";
 }
 
-export default async function Page() {
+export default function Page() {
   const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
-  const channelsSortedBySubs = channels.sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
+
+  const [topic, setTopic] = useState("");
+
+  const channelsSortedBySubs = channels
+    .sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
+    .filter(c => !topic || c.topics.includes(topic));
+
   const [activeChannels, inactiveChannels] = _.partition(channelsSortedBySubs, (channel) => 
     channel.lastVideo?.publishedAt
       && Date.parse(channel.lastVideo?.publishedAt) > oneYearAgoDate);
@@ -40,7 +48,7 @@ export default async function Page() {
         </p>
 
         <div>
-          {topics.map(topic => <a className='mr-2' key={topic.id} href={topic.id}>{topic.name}</a>)}
+          {topics.map(t => <a onClick={() => setTopic(topic == t.id ? "" : t.id)} className={topic == t.id ? "tag active" : "tag"} key={t.id}>{t.name}</a>)}
         </div>
 
         <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -58,7 +66,7 @@ export default async function Page() {
           )}
         </div>
 
-        <h2>Каналы, которые больше года не выпускают видео</h2>
+        {inactiveChannels > 0 ? <h2>Каналы, которые больше года не выпускают видео</h2> : <></>}
 
         <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {inactiveChannels
