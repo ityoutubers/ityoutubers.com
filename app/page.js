@@ -1,12 +1,12 @@
 "use client";
 
-import Image from 'next/image'
-import React, { useState } from 'react';
-import _ from 'lodash'
-import channels from '../pages/api/channels.json'
-import topics from '../pages/api/topics.json'
+import Image from "next/image";
+import React, { useState } from "react";
+import _ from "lodash";
+import channels from "../pages/api/channels.json";
+import topics from "../pages/api/topics.json";
 
-function humanNumber (value) {
+function humanNumber(value) {
   const num = parseInt(value, 10);
   const lookup = [
     { value: 1, symbol: "" },
@@ -15,13 +15,18 @@ function humanNumber (value) {
     { value: 1e9, symbol: "G" },
     { value: 1e12, symbol: "T" },
     { value: 1e15, symbol: "P" },
-    { value: 1e18, symbol: "E" }
+    { value: 1e18, symbol: "E" },
   ];
   const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-  var item = lookup.slice().reverse().find(function(item) {
-    return num >= item.value;
-  });
-  return item ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol : "0";
+  var item = lookup
+    .slice()
+    .reverse()
+    .find(function (item) {
+      return num >= item.value;
+    });
+  return item
+    ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol
+    : "0";
 }
 
 export default function Page() {
@@ -30,57 +35,107 @@ export default function Page() {
   const [topic, setTopic] = useState("");
 
   const channelsSortedBySubs = channels
-    .sort((a, b) => parseInt(a.statistics.subscriberCount) > parseInt(b.statistics.subscriberCount) ? -1 : 1)
-    .filter(c => !topic || c.topics.includes(topic));
+    .sort((a, b) =>
+      parseInt(a.statistics.subscriberCount) >
+      parseInt(b.statistics.subscriberCount)
+        ? -1
+        : 1
+    )
+    .filter((c) => !topic || c.topics.includes(topic));
 
-  const [activeChannels, inactiveChannels] = _.partition(channelsSortedBySubs, (channel) => 
-    channel.lastVideo?.publishedAt
-      && Date.parse(channel.lastVideo?.publishedAt) > oneYearAgoDate);
+  const [activeChannels, inactiveChannels] = _.partition(
+    channelsSortedBySubs,
+    (channel) =>
+      channel.lastVideo?.publishedAt &&
+      Date.parse(channel.lastVideo?.publishedAt) > oneYearAgoDate
+  );
 
   return (
     <div className="prose max-w-none">
       <div className="container mx-auto pb-20 px-5">
         <h1 className="">
-          <Image width="400" height="98" alt="IT Youtubers" src="/ityoutubers-logo.jpg" />
+          <Image
+            width="400"
+            height="98"
+            alt="IT Youtubers"
+            src="/ityoutubers-logo.jpg"
+          />
         </h1>
         <p className="md:w-2/3 lg:w-1/2">
-          ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы сделать IT контент лучше и доступнее. Мнения участников наверняка расходятся по многим вопросам, мы стараемся фокусироваться на IT.
+          ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы
+          сделать IT контент лучше и доступнее. Мнения участников наверняка
+          расходятся по многим вопросам, мы стараемся фокусироваться на IT.
         </p>
 
-        <div className='topics'>
-          {topics.map(t => <a onClick={() => setTopic(topic == t.id ? "" : t.id)} className={topic == t.id ? "topic active" : "topic"} key={t.id}>{t.name}</a>)}
+        <div className="topics">
+          {topics.map((t) => (
+            <a
+              onClick={() => setTopic(topic == t.id ? "" : t.id)}
+              className={topic == t.id ? "topic active" : "topic"}
+              key={t.id}
+            >
+              {t.name}
+            </a>
+          ))}
         </div>
 
-        <div id="channels" className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-          {activeChannels
-            .map(({id, snippet, statistics}) => 
-              <div key={id} className="grid grid-cols-3 gap-8">
-                <div className="col-span-1 not-prose">
-                  <a href={`https://youtube.com/channel/${id}`}><Image width={144} height={144} alt="" className="rounded-full" src={snippet.thumbnails.medium.url} /></a> 
-                </div>
-                <div className="col-span-2">
-                  <a href={`https://youtube.com/channel/${id}`}>{snippet.title} • {humanNumber(statistics.subscriberCount)}</a> 
-                  <p className="line-clamp-6 text-xs">{snippet.description}</p>
-                </div>
+        <div
+          id="channels"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10"
+        >
+          {activeChannels.map(({ id, snippet, statistics }) => (
+            <div key={id} className="grid grid-cols-3 gap-8">
+              <div className="col-span-1 not-prose">
+                <a href={`https://youtube.com/channel/${id}`}>
+                  <Image
+                    width={144}
+                    height={144}
+                    alt=""
+                    className="rounded-full"
+                    src={snippet.thumbnails.medium.url}
+                  />
+                </a>
               </div>
-          )}
+              <div className="col-span-2">
+                <a href={`https://youtube.com/channel/${id}`}>
+                  {snippet.title} • {humanNumber(statistics.subscriberCount)}
+                </a>
+                <p className="line-clamp-6 text-xs">{snippet.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {inactiveChannels.length > 0 ? <h2>Каналы, которые больше года не выпускают видео</h2> : <></>}
+        {inactiveChannels.length > 0 ? (
+          <h2>Каналы, которые больше года не выпускают видео</h2>
+        ) : (
+          <></>
+        )}
 
         <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {inactiveChannels
-            .map(({id, snippet, statistics}) => 
-              <div key={id} className="grid grid-cols-3 gap-8">
-                <div className="col-span-1 not-prose">
-                  <a href={`https://youtube.com/channel/${id}`}><Image width={144} height={144} alt="" className="rounded-full" src={snippet.thumbnails.medium.url} /></a> 
-                </div>
-                <div className="col-span-2">
-                  <a href={`https://youtube.com/channel/${id}`}>{snippet.title} • {humanNumber(statistics.subscriberCount)}</a> 
-                  <p className="line-clamp-4 mt-2 text-xs">{snippet.description}</p>
-                </div>
+          {inactiveChannels.map(({ id, snippet, statistics }) => (
+            <div key={id} className="grid grid-cols-3 gap-8">
+              <div className="col-span-1 not-prose">
+                <a href={`https://youtube.com/channel/${id}`}>
+                  <Image
+                    width={144}
+                    height={144}
+                    alt=""
+                    className="rounded-full"
+                    src={snippet.thumbnails.medium.url}
+                  />
+                </a>
               </div>
-          )}
+              <div className="col-span-2">
+                <a href={`https://youtube.com/channel/${id}`}>
+                  {snippet.title} • {humanNumber(statistics.subscriberCount)}
+                </a>
+                <p className="line-clamp-4 mt-2 text-xs">
+                  {snippet.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
         <p className="pt-5 mt-20">Сделано с помощью 💩 🪵 🌀 в 2022</p>
@@ -94,5 +149,5 @@ export default function Page() {
         src="//js.hs-scripts.com/5930551.js"
       ></script>
     </div>
-  )
+  );
 }
