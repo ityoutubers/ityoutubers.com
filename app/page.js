@@ -138,7 +138,21 @@ export default function Page() {
           ))}
         </div>
 
-        <p className="pt-5 mt-20">Сделано с помощью 💩 🪵 🌀 в 2022</p>
+        <p className="pt-5 mt-20">
+          <a
+            className="not-prose float-right leading-6"
+            href="https://github.com/ityoutubers/ityoutubers.com"
+          >
+            <Image
+              alt=""
+              className="inline"
+              width={21}
+              height={20.5}
+              src="github-mark.svg"
+            />
+          </a>{" "}
+          Сделано с помощью 💩 🪵 🌀 в 2022
+        </p>
       </div>
 
       <script
