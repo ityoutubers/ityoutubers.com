@@ -14,10 +14,10 @@ function Navigation() {
         Сообщество
       </Link>
       <Link
-        className={pathname == "/other-channels" ? "active" : ""}
-        href="/other-channels"
+        className={pathname == "/all-channels" ? "active" : ""}
+        href="/all-channels"
       >
-        Другие каналы
+        Все IT каналы
       </Link>
     </div>
   );

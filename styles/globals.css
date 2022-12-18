@@ -30,4 +30,11 @@
   .main-menu a.active {
     border-color: #000;
   }
+  .ityoutubers-member .channel-name {
+    background-size: 15px 15px;
+    background-image: url(/fav.png);
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    padding-left: 20px;
+  }
 }

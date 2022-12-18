@@ -6,8 +6,17 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['yt3.ggpht.com'],
+    domains: ["yt3.ggpht.com"],
   },
-}
+  async redirects() {
+    return [
+      {
+        source: "/other-channels",
+        destination: "/all-channels",
+        permanent: true,
+      },
+    ];
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

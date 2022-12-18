@@ -109,22 +109,31 @@ async function getYouTubeChannels(channelsPromise) {
     )
   );
 
-  // TODO: delete extra fields
   youtubeChannels.forEach((ytChannel) => {
     ytChannel["lastVideo"] = videos[ytChannel.id];
     ytChannel["topics"] = topics[ytChannel.id];
+    delete ytChannel["etag"];
   });
 
-  return youtubeChannels;
+  return youtubeChannels.sort((a, b) => {
+    a.id > b.id ? 1 : -1;
+  });
 }
 
 Promise.all([
   getTopics().then((data) =>
     fs.writeFile("./data/topics.json", JSON.stringify(data, null, 2))
   ),
-  getYouTubeChannels(getMembers(true)).then((data) =>
-    fs.writeFile("./data/members.json", JSON.stringify(data, null, 2))
-  ),
+  getYouTubeChannels(getMembers(true))
+    .then((data) =>
+      data.map((i) => {
+        i["isMember"] = true;
+        return i;
+      })
+    )
+    .then((data) =>
+      fs.writeFile("./data/members.json", JSON.stringify(data, null, 2))
+    ),
   getYouTubeChannels(getMembers(false)).then((data) =>
     fs.writeFile("./data/channels.json", JSON.stringify(data, null, 2))
   ),
