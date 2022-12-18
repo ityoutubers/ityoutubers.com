@@ -17,6 +17,7 @@
     "@notionhq/client": "^2.2.2",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "human-readable-numbers": "^0.9.5",
     "lodash": "^4.17.21",
     "next": "13.0.6",
     "react": "18.2.0",

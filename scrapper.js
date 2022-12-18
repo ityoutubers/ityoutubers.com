@@ -19,22 +19,6 @@ async function getTopicsQuery(
   return notion.databases.query({ database_id, start_cursor });
 }
 
-async function getActiveMembersQuery(
-  start_cursor,
-  database_id = process.env.NOTION_DB_UID
-) {
-  return notion.databases.query({
-    database_id,
-    start_cursor,
-    filter: {
-      property: "Active",
-      checkbox: {
-        equals: true,
-      },
-    },
-  });
-}
-
 async function getPaginatedData(queryFunc) {
   let items = [];
 
@@ -49,8 +33,21 @@ async function getPaginatedData(queryFunc) {
   return items;
 }
 
-async function getActiveMembers() {
-  return await getPaginatedData(getActiveMembersQuery);
+async function getMembers(active = true) {
+  async function query(start_cursor, database_id = process.env.NOTION_DB_UID) {
+    return notion.databases.query({
+      database_id,
+      start_cursor,
+      filter: {
+        property: "Active",
+        checkbox: {
+          equals: active,
+        },
+      },
+    });
+  }
+
+  return getPaginatedData(query);
 }
 
 async function getTopics() {
@@ -62,7 +59,7 @@ async function getTopics() {
   return topics;
 }
 
-async function getYouTubeChannels() {
+async function getYouTubeChannels(channelsPromise) {
   let youtubeChannels = [];
 
   const idsLens = (item) =>
@@ -70,7 +67,7 @@ async function getYouTubeChannels() {
   const topisLens = (item) =>
     item.properties["Topic"].relation.map(({ id }) => id);
 
-  let members = await getActiveMembers();
+  let members = await channelsPromise;
   const ytChannelsIds = members.map(idsLens).filter((id) => !!id);
 
   const topics = members.reduce(function (acc, cur) {
@@ -123,9 +120,12 @@ async function getYouTubeChannels() {
 
 Promise.all([
   getTopics().then((data) =>
-    fs.writeFile("./pages/api/topics.json", JSON.stringify(data))
+    fs.writeFile("./data/topics.json", JSON.stringify(data, null, 2))
   ),
-  getYouTubeChannels().then((data) =>
-    fs.writeFile("./pages/api/channels.json", JSON.stringify(data))
+  getYouTubeChannels(getMembers(true)).then((data) =>
+    fs.writeFile("./data/members.json", JSON.stringify(data, null, 2))
+  ),
+  getYouTubeChannels(getMembers(false)).then((data) =>
+    fs.writeFile("./data/channels.json", JSON.stringify(data, null, 2))
   ),
 ]).catch(console.error);

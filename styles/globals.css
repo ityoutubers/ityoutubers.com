@@ -12,7 +12,22 @@
     float: left;
   }
   .topic.active {
-    @apply decoration-rose-600;
-    @apply text-rose-600;
+    color: #FE0100;
+  }
+
+  .main-menu {
+    padding-top: 39px;
+  }
+  .main-menu a {
+    @apply text-lg;
+    @apply mr-2;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+  }
+  .main-menu a.active {
+    border-color: #000;
   }
 }

@@ -3,31 +3,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import _ from "lodash";
-import channels from "../pages/api/channels.json";
-import topics from "../pages/api/topics.json";
+import { toHumanString } from "human-readable-numbers";
 
-function humanNumber(value) {
-  const num = parseInt(value, 10);
-  const lookup = [
-    { value: 1, symbol: "" },
-    { value: 1e3, symbol: "k" },
-    { value: 1e6, symbol: "M" },
-    { value: 1e9, symbol: "G" },
-    { value: 1e12, symbol: "T" },
-    { value: 1e15, symbol: "P" },
-    { value: 1e18, symbol: "E" },
-  ];
-  const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-  var item = lookup
-    .slice()
-    .reverse()
-    .find(function (item) {
-      return num >= item.value;
-    });
-  return item
-    ? (num / item.value).toFixed(0).replace(rx, "$1") + item.symbol
-    : "0";
-}
+import channels from "../data/members.json";
+import topics from "../data/topics.json";
 
 export default function Page() {
   const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
@@ -51,117 +30,81 @@ export default function Page() {
   );
 
   return (
-    <div className="prose max-w-none">
-      <div className="container mx-auto pb-20 px-5">
-        <h1 className="">
-          <Image
-            width="400"
-            height="98"
-            alt="IT Youtubers"
-            src="/ityoutubers-logo.jpg"
-          />
-        </h1>
-        <p className="md:w-2/3 lg:w-1/2">
-          ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы
-          сделать IT контент лучше и доступнее. Мнения участников наверняка
-          расходятся по многим вопросам, мы стараемся фокусироваться на IT.
-        </p>
+    <>
+      <p className="italic">
+        ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы
+        сделать IT контент лучше и доступнее. Мнения участников наверняка
+        расходятся по многим вопросам, мы стараемся фокусироваться на IT.
+      </p>
 
-        <div className="topics">
-          {topics.map((t) => (
-            <a
-              onClick={() => setTopic(topic == t.id ? "" : t.id)}
-              className={topic == t.id ? "topic active" : "topic"}
-              key={t.id}
-            >
-              {t.name}
-            </a>
-          ))}
-        </div>
-
-        <div
-          id="channels"
-          className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 mt-10"
-        >
-          {activeChannels.map(({ id, snippet, statistics }) => (
-            <div key={id} className="">
-              <div className="float-left not-prose pr-10">
-                <a href={`https://youtube.com/channel/${id}`}>
-                  <Image
-                    width={144}
-                    height={144}
-                    alt=""
-                    className="rounded-full"
-                    src={snippet.thumbnails.medium.url}
-                  />
-                </a>
-              </div>
-              <div className="">
-                <a href={`https://youtube.com/channel/${id}`}>
-                  {snippet.title} • {humanNumber(statistics.subscriberCount)}
-                </a>
-                <p className="line-clamp-6 text-xs">{snippet.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {inactiveChannels.length > 0 ? (
-          <h2>Каналы, которые больше года не выпускают видео</h2>
-        ) : (
-          <></>
-        )}
-
-        <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {inactiveChannels.map(({ id, snippet, statistics }) => (
-            <div key={id} className="grid grid-cols-3 gap-8">
-              <div className="col-span-1 not-prose">
-                <a href={`https://youtube.com/channel/${id}`}>
-                  <Image
-                    width={144}
-                    height={144}
-                    alt=""
-                    className="rounded-full"
-                    src={snippet.thumbnails.medium.url}
-                  />
-                </a>
-              </div>
-              <div className="col-span-2">
-                <a href={`https://youtube.com/channel/${id}`}>
-                  {snippet.title} • {humanNumber(statistics.subscriberCount)}
-                </a>
-                <p className="line-clamp-4 mt-2 text-xs">
-                  {snippet.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <p className="pt-5 mt-20">
+      <div className="topics mb-10">
+        {topics.map((t) => (
           <a
-            className="not-prose float-right leading-6"
-            href="https://github.com/ityoutubers/ityoutubers.com"
+            onClick={() => setTopic(topic == t.id ? "" : t.id)}
+            className={topic == t.id ? "topic active" : "topic"}
+            key={t.id}
           >
-            <Image
-              alt=""
-              className="inline"
-              width={21}
-              height={20.5}
-              src="github-mark.svg"
-            />
-          </a>{" "}
-          Сделано с помощью 💩 🪵 🌀 в 2022
-        </p>
+            {t.name}
+          </a>
+        ))}
       </div>
 
-      <script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js.hs-scripts.com/5930551.js"
-      ></script>
-    </div>
+      <div
+        id="channels"
+        className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12"
+      >
+        {activeChannels.map(({ id, snippet, statistics }) => (
+          <div key={id} className="">
+            <div className="float-left not-prose pr-10">
+              <a href={`https://youtube.com/channel/${id}`}>
+                <Image
+                  width={144}
+                  height={144}
+                  alt=""
+                  className="rounded-full"
+                  src={snippet.thumbnails.medium.url}
+                />
+              </a>
+            </div>
+            <div className="">
+              <a href={`https://youtube.com/channel/${id}`}>
+                {snippet.title} • {toHumanString(statistics.subscriberCount)}
+              </a>
+              <p className="line-clamp-6 text-xs">{snippet.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {inactiveChannels.length > 0 ? (
+        <h2>Каналы, которые больше года не выпускают видео</h2>
+      ) : (
+        <></>
+      )}
+
+      <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {inactiveChannels.map(({ id, snippet, statistics }) => (
+          <div key={id} className="grid grid-cols-3 gap-8">
+            <div className="col-span-1 not-prose">
+              <a href={`https://youtube.com/channel/${id}`}>
+                <Image
+                  width={144}
+                  height={144}
+                  alt=""
+                  className="rounded-full"
+                  src={snippet.thumbnails.medium.url}
+                />
+              </a>
+            </div>
+            <div className="col-span-2">
+              <a href={`https://youtube.com/channel/${id}`}>
+                {snippet.title} • {toHumanString(statistics.subscriberCount)}
+              </a>
+              <p className="line-clamp-4 mt-2 text-xs">{snippet.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
