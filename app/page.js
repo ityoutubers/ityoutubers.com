@@ -81,11 +81,11 @@ export default function Page() {
 
         <div
           id="channels"
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 mt-10"
         >
           {activeChannels.map(({ id, snippet, statistics }) => (
-            <div key={id} className="grid grid-cols-3 gap-8">
-              <div className="col-span-1 not-prose">
+            <div key={id} className="">
+              <div className="float-left not-prose pr-10">
                 <a href={`https://youtube.com/channel/${id}`}>
                   <Image
                     width={144}
@@ -96,7 +96,7 @@ export default function Page() {
                   />
                 </a>
               </div>
-              <div className="col-span-2">
+              <div className="">
                 <a href={`https://youtube.com/channel/${id}`}>
                   {snippet.title} • {humanNumber(statistics.subscriberCount)}
                 </a>
