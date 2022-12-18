@@ -6,6 +6,8 @@ import _ from "lodash";
 import Link from "next/link";
 import { toHumanString } from "human-readable-numbers";
 
+import { orderBySubscribersDesc } from "../../lib/channels";
+
 import channels from "../../data/channels.json";
 import topics from "../../data/topics.json";
 
@@ -13,12 +15,7 @@ export default function Page() {
   const [topic, setTopic] = useState("");
 
   const channelsSortedBySubs = channels
-    .sort((a, b) =>
-      parseInt(a.statistics.subscriberCount) >
-      parseInt(b.statistics.subscriberCount)
-        ? -1
-        : 1
-    )
+    .sort(orderBySubscribersDesc)
     .filter((c) => !topic || c.topics.includes(topic));
 
   return (
