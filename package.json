@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
     "task:update": "node ./scrapper.js > ./pages/api/data/channels.json && npm run build"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
+    "jest": "^29.3.1",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
