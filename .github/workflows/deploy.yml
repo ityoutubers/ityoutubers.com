@@ -12,9 +12,10 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  deploy-staging:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    environment: 'Staging'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,4 +30,25 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         dokku-host: 'dokku.seniorsoftwarevlogger.com'
         app-name: 'ityoutubers'
+        git-push-flags: '--force'
+
+  deploy-prod:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    environment: 'Prod'
+    needs: deploy-staging
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: "0" # to avoid shallow history error
+          
+    - name: Dokku Deploy action
+      uses: idoberko2/dokku-deploy-github-action@v1
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        dokku-host: 'dokku.seniorsoftwarevlogger.com'
+        app-name: 'ityoutubers.com'
         git-push-flags: '--force'
