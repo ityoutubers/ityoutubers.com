@@ -93,20 +93,25 @@ async function getYouTubeChannels(channelsPromise) {
     playlistIds.map((id) =>
       youtubeApi.playlistItems
         .list({
-          part: "id, snippet",
+          part: "id, snippet, contentDetails",
           playlistId: id,
           maxResults: 1,
         })
         .catch((res) => ({}))
     )
   ).then((all) =>
-    all.forEach(
-      (res) =>
-        (videos[res.data?.items[0]?.snippet?.videoOwnerChannelId] = {
-          publishedAt: res.data?.items[0]?.snippet?.publishedAt,
-          title: res.data?.items[0]?.snippet?.title,
-        })
-    )
+    all.forEach((res) => {
+      const video = res.data?.items[0];
+
+      if (video) {
+        videos[video.snippet.videoOwnerChannelId] = {
+          id: video.contentDetails.videoId,
+          publishedAt: video.snippet.publishedAt,
+          title: video.snippet.title,
+          thumbnail: video.snippet.thumbnails.high,
+        };
+      }
+    })
   );
 
   youtubeChannels.forEach((ytChannel) => {

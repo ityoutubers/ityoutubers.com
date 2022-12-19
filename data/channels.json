@@ -1,6 +1,5 @@
 [
   {
-    "kind": "youtube#channel",
     "id": "UC1g3kT0ZcSXt4_ZyJOshKJQ",
     "snippet": {
       "title": "letsCode",
@@ -21,8 +20,14 @@
       "videoCount": "124"
     },
     "lastVideo": {
+      "id": "mwrcEVvUCS8",
       "publishedAt": "2022-02-11T11:15:49Z",
-      "title": "Онлайн игра на Java #6: Emitter, Pool"
+      "title": "Онлайн игра на Java #6: Emitter, Pool",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/mwrcEVvUCS8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "37545c2b-ff7e-48c7-8581-2aeb27f1e851",
@@ -30,7 +35,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC6Sd8V68RcFXrvlWXabqIaA",
     "snippet": {
       "title": "Natalia Davydova",
@@ -51,8 +55,14 @@
       "videoCount": "16"
     },
     "lastVideo": {
+      "id": "b5GKy9bNeYs",
       "publishedAt": "2022-11-25T05:54:45Z",
-      "title": "Митап Джуниоров #9"
+      "title": "Митап Джуниоров #9",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/b5GKy9bNeYs/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -61,7 +71,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC7aButsVJrJBqzj1933Y_1Q",
     "snippet": {
       "title": "программистом в 40",
@@ -83,8 +92,14 @@
       "videoCount": "44"
     },
     "lastVideo": {
+      "id": "CvH50eQGVGE",
       "publishedAt": "2022-07-31T08:00:11Z",
-      "title": "Уволили из ЕПАМ"
+      "title": "Уволили из ЕПАМ",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/CvH50eQGVGE/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -92,7 +107,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC7f5bVxWsm3jlZIPDzOMcAg",
     "snippet": {
       "title": "Хауди Хо™ - Просто о мире IT!",
@@ -114,8 +128,14 @@
       "videoCount": "397"
     },
     "lastVideo": {
+      "id": "cJbvPGCqW8s",
       "publishedAt": "2022-12-15T18:41:51Z",
-      "title": "Я сделал ИИ для Aim Lab и она его уничтожила :3"
+      "title": "Я сделал ИИ для Aim Lab и она его уничтожила :3",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/cJbvPGCqW8s/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "0c72b25e-dd1f-4683-ad01-419eb5425023",
@@ -123,7 +143,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC8D-Zw9iR6pRyGOXHVqzlQw",
     "snippet": {
       "title": "Murrengan",
@@ -145,15 +164,20 @@
       "videoCount": "49"
     },
     "lastVideo": {
+      "id": "GnsJTcdeBtY",
       "publishedAt": "2022-10-30T20:07:32Z",
-      "title": "Как запустить телеграм бота на python в kubernetes"
+      "title": "Как запустить телеграм бота на python в kubernetes",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/GnsJTcdeBtY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "0c72b25e-dd1f-4683-ad01-419eb5425023"
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC8NEikYv6nEVtW_eR4wLTtw",
     "snippet": {
       "title": "Точка G // как зарабатывают в IT",
@@ -176,8 +200,14 @@
       "videoCount": "437"
     },
     "lastVideo": {
+      "id": "plXy2tuA0dg",
       "publishedAt": "2022-12-14T10:47:19Z",
-      "title": "«Я в принципе не понимаю, почему мы еще живы» – Зарецкая #shorts"
+      "title": "«Я в принципе не понимаю, почему мы еще живы» – Зарецкая #shorts",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/plXy2tuA0dg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "5e33a484-b044-4e48-96bf-061bcaea2757",
@@ -185,7 +215,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UC9MK8SybZcrHR3CUV4NMy2g",
     "snippet": {
       "title": "Диджитализируй!",
@@ -207,8 +236,14 @@
       "videoCount": "148"
     },
     "lastVideo": {
+      "id": "dx7F7VqnsVQ",
       "publishedAt": "2022-12-14T17:03:41Z",
-      "title": "70 книг по IT, которые надо прочесть. Как писать хорошо, языки, тесты, БД, безопасность, soft skills"
+      "title": "70 книг по IT, которые надо прочесть. Как писать хорошо, языки, тесты, БД, безопасность, soft skills",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/dx7F7VqnsVQ/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
@@ -217,7 +252,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCAkMlyQYLsmhYEtYRj6KP7A",
     "snippet": {
       "title": "LAMPOVOE IT",
@@ -239,8 +273,14 @@
       "videoCount": "74"
     },
     "lastVideo": {
+      "id": "L4Yzbn84u4s",
       "publishedAt": "2022-08-10T08:11:59Z",
-      "title": "User Story Mapping - кейс з реального життя"
+      "title": "User Story Mapping - кейс з реального життя",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/L4Yzbn84u4s/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "b47e1bf4-3cac-40a4-b3a3-c75e2bb957c7",
@@ -248,7 +288,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCB8LoPmC2MCVgohn_-gzU3A",
     "snippet": {
       "title": "Макс Пронько",
@@ -270,8 +309,14 @@
       "videoCount": "90"
     },
     "lastVideo": {
+      "id": "h0JXEop-lNA",
       "publishedAt": "2022-01-28T20:01:06Z",
-      "title": "Пишем код на стриме | Пятничный ламповый стрим"
+      "title": "Пишем код на стриме | Пятничный ламповый стрим",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/h0JXEop-lNA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "796c25b4-309f-40ae-aef7-ff07802988b5",
@@ -279,7 +324,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCCE-5_0xSRYkIprHZYaTs9Q",
     "snippet": {
       "title": "Maxim Dorofeev",
@@ -301,8 +345,14 @@
       "videoCount": "243"
     },
     "lastVideo": {
+      "id": "4gEVFjI1fGI",
       "publishedAt": "2022-12-14T17:37:53Z",
-      "title": "Думаем над сложным проектом"
+      "title": "Думаем над сложным проектом",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/4gEVFjI1fGI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -311,7 +361,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCCFOepFnvr1jLXYRKvOGX8Q",
     "snippet": {
       "title": "One Code",
@@ -332,8 +381,14 @@
       "videoCount": "52"
     },
     "lastVideo": {
+      "id": "pqy84l4nQ-Q",
       "publishedAt": "2022-12-17T17:28:13Z",
-      "title": "Один день из жизни программиста в Турции"
+      "title": "Один день из жизни программиста в Турции",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/pqy84l4nQ-Q/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "796c25b4-309f-40ae-aef7-ff07802988b5",
@@ -343,7 +398,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCD5_waDcGBhof9xuA1qovTQ",
     "snippet": {
       "title": "Oleg Molchanov",
@@ -365,8 +419,14 @@
       "videoCount": "130"
     },
     "lastVideo": {
+      "id": "uk5uB05G3H0",
       "publishedAt": "2020-08-31T05:36:03Z",
-      "title": "Курс \"Объектно Ориентированное Программирование в Python\" | Python ООП"
+      "title": "Курс \"Объектно Ориентированное Программирование в Python\" | Python ООП",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/uk5uB05G3H0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
@@ -374,7 +434,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCDsO5GuRbRM5E_nlTgZGzKQ",
     "snippet": {
       "title": "Shulepov Code",
@@ -396,8 +455,14 @@
       "videoCount": "125"
     },
     "lastVideo": {
+      "id": "bK9ncrT5LaA",
       "publishedAt": "2022-09-12T10:30:16Z",
-      "title": "Разработка и продвижение сайта. Александр Шулепов."
+      "title": "Разработка и продвижение сайта. Александр Шулепов.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/bK9ncrT5LaA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "9fd1a860-7c26-4f52-9a1c-5d340aadbfb6",
@@ -407,7 +472,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCFwdlILJL8HLAYLvJE-ySDQ",
     "snippet": {
       "title": "Школа веб-дизайна Яна Агеенко. Уроки и курсы.",
@@ -429,8 +493,14 @@
       "videoCount": "231"
     },
     "lastVideo": {
+      "id": "rhIE7097cmw",
       "publishedAt": "2022-12-18T23:03:55Z",
-      "title": "Швейцарский стиль в веб-дизайне. Урок 5"
+      "title": "Швейцарский стиль в веб-дизайне. Урок 5",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/rhIE7097cmw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "f5fa2960-6630-4f2e-8eb4-603685847591",
@@ -438,7 +508,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCGKAeZhZE7hCMsC757dCyEA",
     "snippet": {
       "title": "LectorWeb. Frontend, создание сайтов",
@@ -461,8 +530,14 @@
       "videoCount": "88"
     },
     "lastVideo": {
+      "id": "5O86iAmmBAU",
       "publishedAt": "2021-12-10T16:00:11Z",
-      "title": "Игра в Кальмара на Javascript | Игра 10 шариков | Пишем игру на Javascript"
+      "title": "Игра в Кальмара на Javascript | Игра 10 шариков | Пишем игру на Javascript",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/5O86iAmmBAU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d5be8ceb-cc31-4af1-ba31-ba080edd9c03",
@@ -472,7 +547,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCGuhp4lpQvK94ZC5kuOZbjA",
     "snippet": {
       "title": "WebForMySelf",
@@ -494,8 +568,14 @@
       "videoCount": "1170"
     },
     "lastVideo": {
+      "id": "itLGzvddoBM",
       "publishedAt": "2022-12-19T16:23:58Z",
-      "title": "Новогодняя распродажа от WebForMySelf. Скидки на видеокурсы 60%+подарки"
+      "title": "Новогодняя распродажа от WebForMySelf. Скидки на видеокурсы 60%+подарки",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/itLGzvddoBM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "6b395d2a-f76d-42c1-9be6-cf3c190c2750",
@@ -505,7 +585,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCHF0TTrKzOASxt4aFByKpnQ",
     "snippet": {
       "title": "Maksim Zhashkevych о разработке и ІТ",
@@ -527,8 +606,14 @@
       "videoCount": "88"
     },
     "lastVideo": {
+      "id": "9BY-senorMk",
       "publishedAt": "2022-09-21T15:36:47Z",
-      "title": "Maksim Zhashkevych Live Stream"
+      "title": "Maksim Zhashkevych Live Stream",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/9BY-senorMk/hqdefault_live.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "2185f062-1ef3-48e6-a8d9-9426b334bf4f",
@@ -536,7 +621,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCHesGnSHXIrUFfE9_VNpKTw",
     "snippet": {
       "title": "Dev Jungles",
@@ -558,8 +642,14 @@
       "videoCount": "76"
     },
     "lastVideo": {
+      "id": "pnXRCazvay4",
       "publishedAt": "2022-12-19T07:00:10Z",
-      "title": "Все про Pattern Matching в C#. Эволюция до 11й версии. Когда использовать?"
+      "title": "Все про Pattern Matching в C#. Эволюция до 11й версии. Когда использовать?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/pnXRCazvay4/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "892dc2a2-0336-4388-9fa8-a89f65baa67a",
@@ -567,7 +657,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCHlMAfOwLZkSg3n1nr4nftw",
     "snippet": {
       "title": "All about QA",
@@ -584,13 +673,19 @@
     },
     "statistics": {
       "viewCount": "258996",
-      "subscriberCount": "6770",
+      "subscriberCount": "6750",
       "hiddenSubscriberCount": false,
       "videoCount": "62"
     },
     "lastVideo": {
+      "id": "berJASUJ_yc",
       "publishedAt": "2022-06-27T06:00:08Z",
-      "title": "Приемочная документация. Какую документацию готовит тестировщик? Программа и методика испытаний."
+      "title": "Приемочная документация. Какую документацию готовит тестировщик? Программа и методика испытаний.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/berJASUJ_yc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "fdf508b3-6d87-44be-9cc0-7c398ebe4b3f",
@@ -598,7 +693,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCHmuu4tJjx54fOWzoIVqmaA",
     "snippet": {
       "title": "Айтишники",
@@ -615,13 +709,19 @@
     },
     "statistics": {
       "viewCount": "6362",
-      "subscriberCount": "667",
+      "subscriberCount": "668",
       "hiddenSubscriberCount": false,
       "videoCount": "9"
     },
     "lastVideo": {
+      "id": "J6kaVus5doE",
       "publishedAt": "2021-09-12T17:30:04Z",
-      "title": "Отвечаем на ваши вопросы / Headless запуск тестов / Вопросы по Allure / Айтишники"
+      "title": "Отвечаем на ваши вопросы / Headless запуск тестов / Вопросы по Allure / Айтишники",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/J6kaVus5doE/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "2e5c2d5e-bab6-49e0-a958-a6dc299ab29e",
@@ -629,7 +729,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCHtyBZ2XbtsRmNiAxh48RGg",
     "snippet": {
       "title": "Automation Remarks",
@@ -646,13 +745,19 @@
     },
     "statistics": {
       "viewCount": "411090",
-      "subscriberCount": "9590",
+      "subscriberCount": "9580",
       "hiddenSubscriberCount": false,
       "videoCount": "97"
     },
     "lastVideo": {
+      "id": "-Jxg5zyfp7M",
       "publishedAt": "2022-09-15T15:00:14Z",
-      "title": "Новини світу тестування за серпень 2022"
+      "title": "Новини світу тестування за серпень 2022",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/-Jxg5zyfp7M/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "fdf508b3-6d87-44be-9cc0-7c398ebe4b3f",
@@ -660,7 +765,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCJGVgS1tfWKSw_Nxi7zFldA",
     "snippet": {
       "title": "imba Ninja",
@@ -682,8 +786,14 @@
       "videoCount": "33"
     },
     "lastVideo": {
+      "id": "UIO8YN1teiQ",
       "publishedAt": "2021-02-24T21:57:24Z",
-      "title": "вечеринка uixNinja pioneer xdj rr"
+      "title": "вечеринка uixNinja pioneer xdj rr",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/UIO8YN1teiQ/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "5c74454e-7f85-47f4-84ee-7219e4cf271b",
@@ -692,7 +802,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCJHS22_QyRowmNAaxoUd4dA",
     "snippet": {
       "title": "Артем Матяшов",
@@ -714,8 +823,14 @@
       "videoCount": "40"
     },
     "lastVideo": {
+      "id": "inx_dVfjadI",
       "publishedAt": "2022-05-06T19:29:56Z",
-      "title": "VPN Wireguard. Просто. Быстро"
+      "title": "VPN Wireguard. Просто. Быстро",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/inx_dVfjadI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -723,7 +838,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCKO-t_ou5mTMN5Jjw89la9g",
     "snippet": {
       "title": "itCODE",
@@ -745,8 +859,14 @@
       "videoCount": "136"
     },
     "lastVideo": {
+      "id": "xbFEoi0rSzk",
       "publishedAt": "2022-10-30T20:58:07Z",
-      "title": "1с:Анонсы и обзоры: №2 Платформа 8.3.22. Новый функционал. Часть №1 | #1С, #программирование, #курсы"
+      "title": "1с:Анонсы и обзоры: №2 Платформа 8.3.22. Новый функционал. Часть №1 | #1С, #программирование, #курсы",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/xbFEoi0rSzk/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "757126fc-d425-4a2d-a7b1-2c312c88bfa8",
@@ -754,7 +874,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCKsqMPIIhev3qbMxCL8Emvw",
     "snippet": {
       "title": "Android Broadcast. Все об Андроид разработке",
@@ -776,8 +895,14 @@
       "videoCount": "226"
     },
     "lastVideo": {
+      "id": "AzP2Yy_O0Cg",
       "publishedAt": "2022-12-15T06:00:03Z",
-      "title": "Писать UI для Android на QT"
+      "title": "Писать UI для Android на QT",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/AzP2Yy_O0Cg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "a4c7e610-8792-44b2-93a0-dcbc7131ced4",
@@ -786,7 +911,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCKvwrpqUvFNRinpTFouLLiQ",
     "snippet": {
       "title": "SHIFU",
@@ -808,8 +932,14 @@
       "videoCount": "460"
     },
     "lastVideo": {
+      "id": "0Y7vipAhoC0",
       "publishedAt": "2022-12-19T11:40:29Z",
-      "title": "Конспект книги \"Запомнить все\" (Stick It)"
+      "title": "Конспект книги \"Запомнить все\" (Stick It)",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/0Y7vipAhoC0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "87f414f1-ca55-4096-9350-635174985491",
@@ -819,7 +949,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCLxXAFaTxctaMIsYg_RRopA",
     "snippet": {
       "title": "Veged and Code",
@@ -840,8 +969,14 @@
       "videoCount": "2"
     },
     "lastVideo": {
+      "id": "ufyMVy-iuvI",
       "publishedAt": "2022-08-16T20:41:31Z",
-      "title": "Как ты кодишь? Владимир @tadatuta Гриненко, руководитель службы интерфейсов Экосистемы Яндекса"
+      "title": "Как ты кодишь? Владимир @tadatuta Гриненко, руководитель службы интерфейсов Экосистемы Яндекса",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/ufyMVy-iuvI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -849,7 +984,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCMnFV9ikfd92j4FgiuKr5tA",
     "snippet": {
       "title": "Stas Peshkur",
@@ -871,8 +1005,14 @@
       "videoCount": "181"
     },
     "lastVideo": {
+      "id": "CsJOoLDl-FU",
       "publishedAt": "2022-11-15T08:00:08Z",
-      "title": "Какой язык программирования учить в 2023"
+      "title": "Какой язык программирования учить в 2023",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/CsJOoLDl-FU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -880,7 +1020,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCN2waErKU52T_41pGgUimXw",
     "snippet": {
       "title": "Ilya Krukowski",
@@ -897,13 +1036,19 @@
     },
     "statistics": {
       "viewCount": "510133",
-      "subscriberCount": "9470",
+      "subscriberCount": "9480",
       "hiddenSubscriberCount": false,
       "videoCount": "152"
     },
     "lastVideo": {
+      "id": "QODPMaUlrLw",
       "publishedAt": "2022-12-19T17:44:06Z",
-      "title": "Solidity и Ethereum, урок #40 | ecrecover, подпись оффчейн/проверка подписи, платежи без газа"
+      "title": "Solidity и Ethereum, урок #40 | ecrecover, подпись оффчейн/проверка подписи, платежи без газа",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/QODPMaUlrLw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "af8ee241-1a39-469f-885a-1440e8dc4bd7",
@@ -913,7 +1058,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCOTSosw_E-Cr88QkAb1Mdsg",
     "snippet": {
       "title": "SkanerSoft",
@@ -936,8 +1080,14 @@
       "videoCount": "110"
     },
     "lastVideo": {
+      "id": "b1xsuqbrGm8",
       "publishedAt": "2022-02-05T16:24:23Z",
-      "title": "Bunker 21"
+      "title": "Bunker 21",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/b1xsuqbrGm8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "b1c24d21-616f-42cd-a415-f5da160a2e2c",
@@ -945,7 +1095,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCPJXxmrw1NRmOwdZtLM694g",
     "snippet": {
       "title": "Data Science Guy",
@@ -967,8 +1116,14 @@
       "videoCount": "32"
     },
     "lastVideo": {
+      "id": "EDErsN-cb48",
       "publishedAt": "2021-12-29T06:47:34Z",
-      "title": "Что будет с data science через 10 лет ||  Стоит ли начинать учиться DS?"
+      "title": "Что будет с data science через 10 лет ||  Стоит ли начинать учиться DS?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/EDErsN-cb48/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "19e0b1c7-5a5d-4a4b-aee6-447a01485856",
@@ -976,7 +1131,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCQFJjX4FFGp4zLWo1R-viKQ",
     "snippet": {
       "title": "CoderLog",
@@ -998,8 +1152,14 @@
       "videoCount": "67"
     },
     "lastVideo": {
+      "id": "msxko4N61XU",
       "publishedAt": "2022-11-19T20:20:53Z",
-      "title": "\"Чи дійсно англійська мова важлива для програміста\" Воркшоп у школі програмування"
+      "title": "\"Чи дійсно англійська мова важлива для програміста\" Воркшоп у школі програмування",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/msxko4N61XU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
@@ -1007,7 +1167,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCQnQ5wh8Eh1q-E2s-fN1Xcg",
     "snippet": {
       "title": "Веб-разработка - DevMagazine",
@@ -1029,8 +1188,14 @@
       "videoCount": "130"
     },
     "lastVideo": {
+      "id": "wr7fegRbymk",
       "publishedAt": "2022-02-24T09:30:11Z",
-      "title": "Что такое ПРОКСИ в JavaScript (Proxy)"
+      "title": "Что такое ПРОКСИ в JavaScript (Proxy)",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/wr7fegRbymk/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d5be8ceb-cc31-4af1-ba31-ba080edd9c03",
@@ -1039,7 +1204,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCR35romAHb1b0-qNsA3daeg",
     "snippet": {
       "title": "Неправильний DevOps",
@@ -1056,13 +1220,19 @@
     },
     "statistics": {
       "viewCount": "167392",
-      "subscriberCount": "1240",
+      "subscriberCount": "1230",
       "hiddenSubscriberCount": false,
       "videoCount": "150"
     },
     "lastVideo": {
+      "id": "O8_DYHU2ZvU",
       "publishedAt": "2022-01-20T16:02:34Z",
-      "title": "Купание в проруби на Водохреще 2022"
+      "title": "Купание в проруби на Водохреще 2022",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/O8_DYHU2ZvU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "1ef81cdf-df81-46b5-a37a-fb0b1502b019",
@@ -1070,7 +1240,43 @@
     ]
   },
   {
-    "kind": "youtube#channel",
+    "id": "UCR3f0Nk75wmdtRCaAwia7Og",
+    "snippet": {
+      "title": "Nikiforov Java",
+      "description": "Привет!\n\nМеня зовут Никифоров Александр, я начинающий Java разработчик.\nНа этом канале я публикую уроки для изучения backend разработки на Java, в том числе подходящие для усвоения информации в пути, а также делюсь своим опытом изучения технологий.\n\nЕсли у вас есть какие то вопросы - с радостью отвечу на них в комментариях.\n\n",
+      "customUrl": "@nikiforovjava",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/esjbpPtFDG83K3RXiXpX8It1PVTmsL2ShR_afrsFMPwb12LsEtZoKffm2_P_kRNVrrkKWbxL-Q=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "210661",
+      "subscriberCount": "4030",
+      "hiddenSubscriberCount": false,
+      "videoCount": "45"
+    },
+    "lastVideo": {
+      "id": "WUtGalX2RlA",
+      "publishedAt": "2022-12-15T18:21:50Z",
+      "title": "Leetcode 509 Fibonacci Number (часть 2) -математическое определение алгоритмической сложности O(2^n)",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/WUtGalX2RlA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "37545c2b-ff7e-48c7-8581-2aeb27f1e851",
+      "6b395d2a-f76d-42c1-9be6-cf3c190c2750"
+    ]
+  },
+  {
     "id": "UCTSVfbCKN3nZbogPtOCHcMg",
     "snippet": {
       "title": "devschacht",
@@ -1092,8 +1298,14 @@
       "videoCount": "103"
     },
     "lastVideo": {
+      "id": "H6acsBUdvcM",
       "publishedAt": "2021-09-02T06:00:03Z",
-      "title": "Наивный полифилл промиса — 2. Исправляем then."
+      "title": "Наивный полифилл промиса — 2. Исправляем then.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/H6acsBUdvcM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "9fd1a860-7c26-4f52-9a1c-5d340aadbfb6",
@@ -1101,7 +1313,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCVbz7l0COUdLupcY4YtYH0w",
     "snippet": {
       "title": "Sergey Nemchinskiy",
@@ -1123,8 +1334,14 @@
       "videoCount": "891"
     },
     "lastVideo": {
+      "id": "h-VBBkrAsqQ",
       "publishedAt": "2022-12-19T14:48:04Z",
-      "title": "Прямой эфир про образование программиста"
+      "title": "Прямой эфир про образование программиста",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/h-VBBkrAsqQ/hqdefault_live.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "37545c2b-ff7e-48c7-8581-2aeb27f1e851",
@@ -1134,7 +1351,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCWdmR3tpvXkzubAZugUQLdw",
     "snippet": {
       "title": "DKA-DEVELOP",
@@ -1156,8 +1372,14 @@
       "videoCount": "148"
     },
     "lastVideo": {
+      "id": "5Cz95F_wpx4",
       "publishedAt": "2021-03-20T07:00:30Z",
-      "title": "Зарабатывать не умея программировать / КАК? ))"
+      "title": "Зарабатывать не умея программировать / КАК? ))",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/5Cz95F_wpx4/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -1165,7 +1387,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCZ26MoNJKaGXFQWKuGVzmAg",
     "snippet": {
       "title": "Чёрный Треугольник",
@@ -1187,8 +1408,14 @@
       "videoCount": "144"
     },
     "lastVideo": {
+      "id": "yjCN47bK41U",
       "publishedAt": "2022-12-10T14:47:10Z",
-      "title": "Двухфакторная аутентификация на Python"
+      "title": "Двухфакторная аутентификация на Python",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/yjCN47bK41U/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "42c020e3-eaef-4ff9-b987-2b8732f27f3c",
@@ -1196,7 +1423,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCZfGdLAudbmuBaRKEZmLnDQ",
     "snippet": {
       "title": "Futu Lady",
@@ -1218,8 +1444,14 @@
       "videoCount": "96"
     },
     "lastVideo": {
+      "id": "UZcic4SMims",
       "publishedAt": "2021-11-10T15:30:56Z",
-      "title": "Mille Miglia Dubai 2021"
+      "title": "Mille Miglia Dubai 2021",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/UZcic4SMims/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -1227,7 +1459,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCb5rJDyxGM5imZ6yvx5tAWQ",
     "snippet": {
       "title": "Daria Emacs",
@@ -1249,8 +1480,14 @@
       "videoCount": "93"
     },
     "lastVideo": {
+      "id": "QUXOlf8aAM0",
       "publishedAt": "2021-12-18T02:41:07Z",
-      "title": "Тест"
+      "title": "Тест",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/QUXOlf8aAM0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c5ad90e1-8247-4948-b621-8e796ad59b1a",
@@ -1258,7 +1495,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCbi6BvrrHU5Ppct4x_dVP2Q",
     "snippet": {
       "title": "GNU Linux Pro",
@@ -1274,13 +1510,19 @@
     },
     "statistics": {
       "viewCount": "446808",
-      "subscriberCount": "9930",
+      "subscriberCount": "9920",
       "hiddenSubscriberCount": false,
       "videoCount": "109"
     },
     "lastVideo": {
+      "id": "q6Pclc4ZGRY",
       "publishedAt": "2022-12-04T17:36:45Z",
-      "title": "Стрим: Строим IaC #3"
+      "title": "Стрим: Строим IaC #3",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/q6Pclc4ZGRY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "8409ed76-cdb1-49dd-974c-3b54ac1e3ba1",
@@ -1289,7 +1531,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCcvWB2mtAWa4-CVywA7cUGg",
     "snippet": {
       "title": "About IT",
@@ -1311,8 +1552,14 @@
       "videoCount": "35"
     },
     "lastVideo": {
+      "id": "5jFSljowa34",
       "publishedAt": "2021-11-29T09:57:24Z",
-      "title": "Немчинский - хватит врать! [Как программисту вырасти из Middle до Senior?]"
+      "title": "Немчинский - хватит врать! [Как программисту вырасти из Middle до Senior?]",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/5jFSljowa34/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d5be8ceb-cc31-4af1-ba31-ba080edd9c03",
@@ -1320,7 +1567,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCdpVvYaPX7m_i2CUP7paBFQ",
     "snippet": {
       "title": "Как пройти в IT?",
@@ -1337,13 +1583,19 @@
     },
     "statistics": {
       "viewCount": "646094",
-      "subscriberCount": "17000",
+      "subscriberCount": "16900",
       "hiddenSubscriberCount": false,
       "videoCount": "29"
     },
     "lastVideo": {
+      "id": "tBSO58JSBxA",
       "publishedAt": "2022-10-05T14:44:33Z",
-      "title": "Стив Возняк - программист, изменивший мир!"
+      "title": "Стив Возняк - программист, изменивший мир!",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/tBSO58JSBxA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "0c72b25e-dd1f-4683-ad01-419eb5425023",
@@ -1354,7 +1606,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCeISxWd5UTxH6-uXp3ev-5w",
     "snippet": {
       "title": "dUdVstud",
@@ -1376,8 +1627,14 @@
       "videoCount": "264"
     },
     "lastVideo": {
+      "id": "vowIhe7MBSc",
       "publishedAt": "2022-12-16T15:48:21Z",
-      "title": "P.45 Динамические массивы в С и С++"
+      "title": "P.45 Динамические массивы в С и С++",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/vowIhe7MBSc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "6d59bb13-ed33-40a2-a0e2-a92fa9ddaa43",
@@ -1385,7 +1642,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCeMjRm7jB18LCD8ji5O_7oA",
     "snippet": {
       "title": "АйТиКьюЭй",
@@ -1407,8 +1663,14 @@
       "videoCount": "14"
     },
     "lastVideo": {
+      "id": "gKlVdxHFtxE",
       "publishedAt": "2021-08-09T09:03:20Z",
-      "title": "7 ПРИНЦИПОВ ТЕСТИРОВАНИЯ / ТЕОРИЯ ТЕСТИРОВАНИЯ"
+      "title": "7 ПРИНЦИПОВ ТЕСТИРОВАНИЯ / ТЕОРИЯ ТЕСТИРОВАНИЯ",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/gKlVdxHFtxE/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "fdf508b3-6d87-44be-9cc0-7c398ebe4b3f",
@@ -1416,7 +1678,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCeObZv89Stb2xLtjLJ0De3Q",
     "snippet": {
       "title": "АйТиБорода",
@@ -1439,8 +1700,14 @@
       "videoCount": "292"
     },
     "lastVideo": {
+      "id": "j5kgTvTB-mA",
       "publishedAt": "2022-12-17T15:47:16Z",
-      "title": "Как программируют интерфейсы компьютер-мозг"
+      "title": "Как программируют интерфейсы компьютер-мозг",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/j5kgTvTB-mA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "5e33a484-b044-4e48-96bf-061bcaea2757",
@@ -1448,7 +1715,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCedskVwIKiZJsO8XdJdLKnA",
     "snippet": {
       "title": "Фрілансер по життю",
@@ -1470,8 +1736,14 @@
       "videoCount": "216"
     },
     "lastVideo": {
+      "id": "7E6lHqmf4FY",
       "publishedAt": "2022-12-12T12:20:46Z",
-      "title": "Адаптивна верстка сайту для початківців. Пояснення дій. HTML CSS JS FIGMA. Майстер-клас з верстки"
+      "title": "Адаптивна верстка сайту для початківців. Пояснення дій. HTML CSS JS FIGMA. Майстер-клас з верстки",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/7E6lHqmf4FY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d5be8ceb-cc31-4af1-ba31-ba080edd9c03",
@@ -1480,7 +1752,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCfkGzBtY86U5Y8kmbEuiNIA",
     "snippet": {
       "title": "ANDROIDHELPER [UNITY3D and more]",
@@ -1502,8 +1773,14 @@
       "videoCount": "111"
     },
     "lastVideo": {
+      "id": "e17Z-Bc9hQo",
       "publishedAt": "2019-08-20T13:11:02Z",
-      "title": "[UNITY] Как делать отладку своего приложения на Android?"
+      "title": "[UNITY] Как делать отладку своего приложения на Android?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/e17Z-Bc9hQo/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "a4c7e610-8792-44b2-93a0-dcbc7131ced4",
@@ -1512,7 +1789,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCg8ss4xW9jASrqWGP30jXiw",
     "snippet": {
       "title": "Владилен Минин",
@@ -1534,8 +1810,14 @@
       "videoCount": "206"
     },
     "lastVideo": {
+      "id": "b598TqLzBb4",
       "publishedAt": "2022-12-15T10:06:12Z",
-      "title": "TypeScript за 2 минуты"
+      "title": "TypeScript за 2 минуты",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/b598TqLzBb4/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "9fd1a860-7c26-4f52-9a1c-5d340aadbfb6",
@@ -1544,7 +1826,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCgBv-XUcMkZ0KdY9HkQ8Hdg",
     "snippet": {
       "title": "Yuliya Deinega",
@@ -1561,13 +1842,19 @@
     },
     "statistics": {
       "viewCount": "1147508",
-      "subscriberCount": "29800",
+      "subscriberCount": "29700",
       "hiddenSubscriberCount": false,
       "videoCount": "27"
     },
     "lastVideo": {
+      "id": "QzpnD16B1e4",
       "publishedAt": "2021-06-14T15:38:18Z",
-      "title": "Как понять, что программирование — это твоё?"
+      "title": "Как понять, что программирование — это твоё?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/QzpnD16B1e4/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -1575,7 +1862,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UChSGI2R2kRMjzXJuYqHWQZg",
     "snippet": {
       "title": "Timur Shemsedinov",
@@ -1592,13 +1878,19 @@
     },
     "statistics": {
       "viewCount": "1960332",
-      "subscriberCount": "34400",
+      "subscriberCount": "34500",
       "hiddenSubscriberCount": false,
       "videoCount": "308"
     },
     "lastVideo": {
+      "id": "KYMR8jWi5Rw",
       "publishedAt": "2022-10-25T18:42:47Z",
-      "title": "💻 Основи програмування з прикладами на JavaScript: семінар #19"
+      "title": "💻 Основи програмування з прикладами на JavaScript: семінар #19",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/KYMR8jWi5Rw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "9fd1a860-7c26-4f52-9a1c-5d340aadbfb6",
@@ -1607,7 +1899,42 @@
     ]
   },
   {
-    "kind": "youtube#channel",
+    "id": "UChtuZ83LdNqqtjkukGhcekg",
+    "snippet": {
+      "title": "CyberYozh",
+      "description": "Канал посвящен проекту \"Бесплатный курс по анонимности и безопасности в сети\" от CyberYozh security group.\nPatreon 👉 https://www.patreon.com/cyberyozh\nДонат в BTC(Bitcoin): bc1qku0z73dcf79kkn5gecf534l4mm97zwn05zdf0d\nДонат в ETH(Ethereum): 0xf9595f9d7566Fee88416559d1E98057840CEf05e\nДонат в XMR(Monero): 43jBuXPg9BMFk4wW7wbLEtEcUMRiE4TPojHqEuZRUCMVE2iW6Lr5vQ3R8FwJC1UGaTa1m6z6CHcF1JcCWhZFQt46FuYVQpg\nДонат в LTC(Litecoin): MV6yJB8i7feyCUVvneoNS4gh82XTN46ovf\n",
+      "customUrl": "@cyberyozh",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/O0m_9QztVGWMJyRa-IO01wNXaxsZiZTl8viiSEAAQn9wLGb0aMep8FRniS-g34I79WcxxMla=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "US"
+    },
+    "statistics": {
+      "viewCount": "614573",
+      "subscriberCount": "16400",
+      "hiddenSubscriberCount": false,
+      "videoCount": "99"
+    },
+    "lastVideo": {
+      "id": "rby1no7UMDU",
+      "publishedAt": "2022-12-13T14:56:21Z",
+      "title": "Сергей Павлович | Блокировка VPN в России. Сколько зарабатывает Глаз Бога?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/rby1no7UMDU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "42c020e3-eaef-4ff9-b987-2b8732f27f3c"
+    ]
+  },
+  {
     "id": "UCiZtj9HjyudBwC2TywG0GzQ",
     "snippet": {
       "title": "karpov.courses",
@@ -1629,8 +1956,14 @@
       "videoCount": "184"
     },
     "lastVideo": {
+      "id": "64yoZSMEhoY",
       "publishedAt": "2022-12-15T15:35:46Z",
-      "title": "Интервью по компетенциям | Выпуск 2 | Валерий Бабушкин | karpov.courses"
+      "title": "Интервью по компетенциям | Выпуск 2 | Валерий Бабушкин | karpov.courses",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/64yoZSMEhoY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "19e0b1c7-5a5d-4a4b-aee6-447a01485856",
@@ -1639,7 +1972,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCkuZ-5vdtL8TcIglgXUlXaA",
     "snippet": {
       "title": "IT camp",
@@ -1661,8 +1993,14 @@
       "videoCount": "19"
     },
     "lastVideo": {
+      "id": "xhMBXk2LHcw",
       "publishedAt": "2021-07-20T06:00:22Z",
-      "title": "Product manager 101: говорят продакт-менеджеры из Skyeng, ProductStar, Gismart, PandaDoc, Gett"
+      "title": "Product manager 101: говорят продакт-менеджеры из Skyeng, ProductStar, Gismart, PandaDoc, Gett",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/xhMBXk2LHcw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "2e5c2d5e-bab6-49e0-a958-a6dc299ab29e",
@@ -1670,7 +2008,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UClDDVLu0Cj_o9Y5D2ilCtdQ",
     "snippet": {
       "title": "Максим Гром",
@@ -1692,8 +2029,14 @@
       "videoCount": "186"
     },
     "lastVideo": {
+      "id": "4hI7ZLBr__8",
       "publishedAt": "2022-05-01T17:15:44Z",
-      "title": "Angular async pipe своими руками (DIY). Глубокий разбор реализации async pipe"
+      "title": "Angular async pipe своими руками (DIY). Глубокий разбор реализации async pipe",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/4hI7ZLBr__8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d5be8ceb-cc31-4af1-ba31-ba080edd9c03",
@@ -1703,7 +2046,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UClndvajuNPjUjFcKcg0X8OA",
     "snippet": {
       "title": "Глеб Михайлов",
@@ -1724,8 +2066,14 @@
       "videoCount": "227"
     },
     "lastVideo": {
+      "id": "2jDFud5hRHM",
       "publishedAt": "2022-10-24T05:33:13Z",
-      "title": "Simulative: симулятор аналитика | Ща порешаем! #98"
+      "title": "Simulative: симулятор аналитика | Ща порешаем! #98",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/2jDFud5hRHM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "19e0b1c7-5a5d-4a4b-aee6-447a01485856",
@@ -1733,7 +2081,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCmiv7ZiPmP98mr2Lrfxg8lA",
     "snippet": {
       "title": "Katya Kravchenko US Life",
@@ -1755,8 +2102,14 @@
       "videoCount": "37"
     },
     "lastVideo": {
+      "id": "7QihNAkvsAQ",
       "publishedAt": "2020-05-07T04:45:15Z",
-      "title": "Как я стала программистом из тестировщика - ответы на вопросы"
+      "title": "Как я стала программистом из тестировщика - ответы на вопросы",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/7QihNAkvsAQ/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "fdf508b3-6d87-44be-9cc0-7c398ebe4b3f",
@@ -1764,7 +2117,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCn-1dFs5zT1nIFz3cMKGx-g",
     "snippet": {
       "title": "Ian Solomein",
@@ -1786,8 +2138,14 @@
       "videoCount": "99"
     },
     "lastVideo": {
+      "id": "B1fCx1VUEf0",
       "publishedAt": "2020-09-30T14:48:29Z",
-      "title": "Геттеры/Сеттеры, Наблюдатели Свойств в Swift"
+      "title": "Геттеры/Сеттеры, Наблюдатели Свойств в Swift",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/B1fCx1VUEf0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "cb32fce8-1eb4-4dfd-b21c-f0e807431686",
@@ -1796,7 +2154,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCp-t0_gm6q82nMP-eEF-8oA",
     "snippet": {
       "title": "ITКультура",
@@ -1818,8 +2175,14 @@
       "videoCount": "118"
     },
     "lastVideo": {
+      "id": "3LOWBKvGAjY",
       "publishedAt": "2022-12-05T04:33:55Z",
-      "title": "Уехал из Казахстана во Вьетнам / ITКультура"
+      "title": "Уехал из Казахстана во Вьетнам / ITКультура",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/3LOWBKvGAjY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -1827,7 +2190,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCqBzmiOh1nv-fDEShZKGCvQ",
     "snippet": {
       "title": "Быть Программистом",
@@ -1849,8 +2211,14 @@
       "videoCount": "294"
     },
     "lastVideo": {
+      "id": "b3G4KM8HqpM",
       "publishedAt": "2022-11-11T06:15:20Z",
-      "title": "Купи Курс за 9$, чтобы зарабатывать по 2000$ на WordPress и PHP."
+      "title": "Купи Курс за 9$, чтобы зарабатывать по 2000$ на WordPress и PHP.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/b3G4KM8HqpM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "796c25b4-309f-40ae-aef7-ff07802988b5",
@@ -1859,7 +2227,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCr3AaLhUzP8aeXPf3_LUADQ",
     "snippet": {
       "title": "Школа дизайна – UX Mind School",
@@ -1881,8 +2248,14 @@
       "videoCount": "69"
     },
     "lastVideo": {
+      "id": "U_J3WMUyZJs",
       "publishedAt": "2022-07-13T15:05:20Z",
-      "title": "Уроки 3D для начинающих. Cinema 4D. Урок 6 - Создание 3-х мерной иллюстрации"
+      "title": "Уроки 3D для начинающих. Cinema 4D. Урок 6 - Создание 3-х мерной иллюстрации",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/U_J3WMUyZJs/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "f5fa2960-6630-4f2e-8eb4-603685847591",
@@ -1890,7 +2263,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCrKUQBc3GMnhwzUlbZRssWA",
     "snippet": {
       "title": "SBeregovoyRU",
@@ -1912,8 +2284,14 @@
       "videoCount": "67"
     },
     "lastVideo": {
+      "id": "du2yI1pIjaA",
       "publishedAt": "2022-01-12T16:00:32Z",
-      "title": "PVS-Studio и Visual Studio для поиска хитрых багов"
+      "title": "PVS-Studio и Visual Studio для поиска хитрых багов",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/du2yI1pIjaA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "892dc2a2-0336-4388-9fa8-a89f65baa67a",
@@ -1921,7 +2299,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCrWP9UeNep74kW0cxY7YPpw",
     "snippet": {
       "title": "WAYUP & Андрей Гаврилов",
@@ -1942,8 +2319,14 @@
       "videoCount": "525"
     },
     "lastVideo": {
+      "id": "qSb0KRYsBJc",
       "publishedAt": "2022-12-19T16:32:08Z",
-      "title": "Топ странных заказчиков на фрилансе: откровенно"
+      "title": "Топ странных заказчиков на фрилансе: откровенно",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/qSb0KRYsBJc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "9fd1a860-7c26-4f52-9a1c-5d340aadbfb6",
@@ -1954,7 +2337,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCrWWcscvUWaqdQJLQQGO6BA",
     "snippet": {
       "title": "PythonToday",
@@ -1976,8 +2358,14 @@
       "videoCount": "137"
     },
     "lastVideo": {
+      "id": "DLb9oTaX-AY",
       "publishedAt": "2022-12-18T07:05:05Z",
-      "title": "Пентест WordPress с нуля | CTF | TryHackMe - Internal | Информационная безопасность"
+      "title": "Пентест WordPress с нуля | CTF | TryHackMe - Internal | Информационная безопасность",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/DLb9oTaX-AY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
@@ -1985,7 +2373,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCrkPsvLGln62OMZRO6K-llg",
     "snippet": {
       "title": "Nick Chapsas",
@@ -2007,8 +2394,14 @@
       "videoCount": "329"
     },
     "lastVideo": {
+      "id": "57Zpht60yxg",
       "publishedAt": "2022-12-19T17:00:03Z",
-      "title": "Can ChatGPT write GOOD unit tests?"
+      "title": "Can ChatGPT write GOOD unit tests?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/57Zpht60yxg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "892dc2a2-0336-4388-9fa8-a89f65baa67a",
@@ -2016,7 +2409,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCtLKO1Cb2GVNrbU7Fi0pM0w",
     "snippet": {
       "title": "#SimpleCode",
@@ -2037,8 +2429,14 @@
       "videoCount": "362"
     },
     "lastVideo": {
+      "id": "aToq1UEKSuM",
       "publishedAt": "2021-08-09T06:55:33Z",
-      "title": "Обобщения в C# | производительность | коллекции | list vs arraylist | C# ООП | # 84"
+      "title": "Обобщения в C# | производительность | коллекции | list vs arraylist | C# ООП | # 84",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/aToq1UEKSuM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "892dc2a2-0336-4388-9fa8-a89f65baa67a",
@@ -2046,7 +2444,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCtp7JBotTpx-vKzjojdOxiA",
     "snippet": {
       "title": "Максим Кульгин",
@@ -2069,8 +2466,14 @@
       "videoCount": "368"
     },
     "lastVideo": {
+      "id": "tJg8rnfSq4U",
       "publishedAt": "2022-12-12T15:38:42Z",
-      "title": "№373 - Как мы планируем зарабатывать в 2023 году на ИТ - бизнесе в России. Наши откровенные планы."
+      "title": "№373 - Как мы планируем зарабатывать в 2023 году на ИТ - бизнесе в России. Наши откровенные планы.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/tJg8rnfSq4U/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "d369fa35-3b02-46e5-b1b4-3ae84f452f50",
@@ -2079,7 +2482,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCxGXkPks1Ykbx2Plt4DgZlA",
     "snippet": {
       "title": "Mobile Developer. Все об Android и iOS разработке",
@@ -2096,13 +2498,19 @@
     },
     "statistics": {
       "viewCount": "1420059",
-      "subscriberCount": "26100",
+      "subscriberCount": "26200",
       "hiddenSubscriberCount": false,
       "videoCount": "181"
     },
     "lastVideo": {
+      "id": "beMcoCCshUk",
       "publishedAt": "2022-12-16T09:03:28Z",
-      "title": "Что будет в 2023? Тренды мобильной разработки / Мобильный разработчик"
+      "title": "Что будет в 2023? Тренды мобильной разработки / Мобильный разработчик",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/beMcoCCshUk/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "5e844577-2076-48c5-8d81-2e781d6a07c4",
@@ -2112,7 +2520,6 @@
     ]
   },
   {
-    "kind": "youtube#channel",
     "id": "UCxjs3aUQ9OnufZQZaCH-E4w",
     "snippet": {
       "title": "Anywhere Club / на русском",
@@ -2129,13 +2536,19 @@
     },
     "statistics": {
       "viewCount": "215469",
-      "subscriberCount": "6200",
+      "subscriberCount": "6210",
       "hiddenSubscriberCount": false,
       "videoCount": "31"
     },
     "lastVideo": {
+      "id": "sdP_uMRGzb0",
       "publishedAt": "2022-12-17T06:11:47Z",
-      "title": "JavaScript, Git, Coding Stories и pet-проекты / Вход в программирование через ИГРЫ!"
+      "title": "JavaScript, Git, Coding Stories и pet-проекты / Вход в программирование через ИГРЫ!",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/sdP_uMRGzb0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "2e5c2d5e-bab6-49e0-a958-a6dc299ab29e",
@@ -2143,7 +2556,42 @@
     ]
   },
   {
-    "kind": "youtube#channel",
+    "id": "UCz29nMCtFP5cuyuLR_0dFkw",
+    "snippet": {
+      "title": "Begin End",
+      "description": "Здесь можно научиться программировать на языке Си и C++ с абсолютного нуля. Кроме того мы изучаем графический движок OpenGL с еще большего нуля. Я подробно объясню материал шаг за шагом. Кроме того периодически мы будем делать простые, но интересные игры на каждом изучаемом языке) \n",
+      "customUrl": "@beginend95",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu9fRFbDU7ZmKj5tgThly8n5LWEq1GBb_d1A0TBM=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "1439764",
+      "subscriberCount": "13200",
+      "hiddenSubscriberCount": false,
+      "videoCount": "169"
+    },
+    "lastVideo": {
+      "id": "P0H9VsKQz5o",
+      "publishedAt": "2022-06-18T16:00:20Z",
+      "title": "Язык С++ - Урок 27 - Анимация для игры 2048",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/P0H9VsKQz5o/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "c5ad90e1-8247-4948-b621-8e796ad59b1a",
+      "0c72b25e-dd1f-4683-ad01-419eb5425023"
+    ]
+  },
+  {
     "id": "UCzw4ZUK8LjNo6wrczFr6WHA",
     "snippet": {
       "title": "Аве Кодер",
@@ -2165,8 +2613,14 @@
       "videoCount": "235"
     },
     "lastVideo": {
+      "id": "KwlU2jpJFWw",
       "publishedAt": "2022-12-18T10:10:18Z",
-      "title": "ChatGPT: Подробный Разбор с Примерами || Смотреть Обязательно!"
+      "title": "ChatGPT: Подробный Разбор с Примерами || Смотреть Обязательно!",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/KwlU2jpJFWw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
     },
     "topics": [
       "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
