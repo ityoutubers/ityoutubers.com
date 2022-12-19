@@ -10,8 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "task:update": "node ./scrapper.js > ./pages/api/data/channels.json && npm run build"
+    "test": "jest"
   },
   "dependencies": {
     "@googleapis/youtube": "^8.0.0",
