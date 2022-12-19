@@ -4,20 +4,30 @@ import Image from "next/image";
 import React, { useState } from "react";
 import _ from "lodash";
 import { toHumanString } from "human-readable-numbers";
+import Fuse from "fuse.js";
 
 import { orderBySubscribersDesc } from "../lib/channels";
 
 import channels from "../data/members.json";
 import topics from "../data/topics.json";
 
+const sortedChannels = channels.sort(orderBySubscribersDesc);
+
+const options = {
+  threshold: 0.3,
+  keys: ["snippet.title", "snippet.description"],
+};
+const fuse = new Fuse(sortedChannels, options);
+
 export default function Page() {
   const oneYearAgoDate = Date.now() - 365 * 24 * 60 * 60000;
 
+  const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
 
-  const channelsSortedBySubs = channels
-    .sort(orderBySubscribersDesc)
-    .filter((c) => !topic || c.topics.includes(topic));
+  const channelsSortedBySubs = (
+    query ? fuse.search(query).map((i) => i.item) : sortedChannels
+  ).filter((c) => !topic || c.topics.includes(topic));
 
   const [activeChannels, inactiveChannels] = _.partition(
     channelsSortedBySubs,
@@ -33,6 +43,16 @@ export default function Page() {
         сделать IT контент лучше и доступнее. Мнения участников наверняка
         расходятся по многим вопросам, мы стараемся фокусироваться на IT.
       </p>
+
+      <div className="mb-5">
+        <input
+          className="w-full"
+          placeholder="Поиск"
+          value={query}
+          type="text"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
 
       <div className="topics mb-10">
         {topics.map((t) => (

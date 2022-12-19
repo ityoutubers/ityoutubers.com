@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import _ from "lodash";
 import Link from "next/link";
 import { toHumanString } from "human-readable-numbers";
+import Fuse from "fuse.js";
 
 import { orderBySubscribersDesc } from "../../lib/channels";
 
@@ -12,12 +13,21 @@ import members from "../../data/members.json";
 import channels from "../../data/channels.json";
 import topics from "../../data/topics.json";
 
+const sortedChannels = [...channels, ...members].sort(orderBySubscribersDesc);
+
+const options = {
+  threshold: 0.3,
+  keys: ["snippet.title", "snippet.description"],
+};
+const fuse = new Fuse(sortedChannels, options);
+
 export default function Page() {
+  const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
 
-  const channelsSortedBySubs = [...channels, ...members]
-    .sort(orderBySubscribersDesc)
-    .filter((c) => !topic || c.topics.includes(topic));
+  const channelsSortedBySubs = (
+    query ? fuse.search(query).map((i) => i.item) : sortedChannels
+  ).filter((c) => !topic || c.topics.includes(topic));
 
   return (
     <>
@@ -33,6 +43,16 @@ export default function Page() {
         </Link>
         .
       </p>
+
+      <div className="mb-5">
+        <input
+          className="w-full"
+          placeholder="Поиск"
+          value={query}
+          type="text"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
 
       <div className="topics mb-10">
         {topics.map((t) => (
