@@ -115,15 +115,15 @@ async function getYouTubeChannels(channelsPromise) {
     delete ytChannel["etag"];
   });
 
-  return youtubeChannels.sort((a, b) => {
-    a.id > b.id ? 1 : -1;
-  });
+  return youtubeChannels.sort((a, b) => (a.id > b.id ? 1 : -1));
 }
 
 Promise.all([
-  getTopics().then((data) =>
-    fs.writeFile("./data/topics.json", JSON.stringify(data, null, 2))
-  ),
+  getTopics()
+    .then((data) => data.sort((a, b) => (a.name > b.name ? 1 : -1)))
+    .then((data) =>
+      fs.writeFile("./data/topics.json", JSON.stringify(data, null, 2))
+    ),
   getYouTubeChannels(getMembers(true))
     .then((data) =>
       data.map((i) => {
