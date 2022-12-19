@@ -112,7 +112,13 @@ async function getYouTubeChannels(channelsPromise) {
   youtubeChannels.forEach((ytChannel) => {
     ytChannel["lastVideo"] = videos[ytChannel.id];
     ytChannel["topics"] = topics[ytChannel.id];
+
     delete ytChannel["etag"];
+    delete ytChannel["contentDetails"];
+    delete ytChannel["snippet"]["localized"];
+    delete ytChannel["snippet"]["publishedAt"];
+    delete ytChannel["snippet"]["thumbnails"]["default"];
+    delete ytChannel["snippet"]["thumbnails"]["high"];
   });
 
   return youtubeChannels.sort((a, b) => (a.id > b.id ? 1 : -1));
