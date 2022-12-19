@@ -114,6 +114,7 @@ async function getYouTubeChannels(channelsPromise) {
     ytChannel["topics"] = topics[ytChannel.id];
 
     delete ytChannel["etag"];
+    delete ytChannel["kind"];
     delete ytChannel["contentDetails"];
     delete ytChannel["snippet"]["localized"];
     delete ytChannel["snippet"]["publishedAt"];
