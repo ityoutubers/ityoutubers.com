@@ -5,7 +5,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
     domains: ["yt3.ggpht.com"],
   },
   async redirects() {
