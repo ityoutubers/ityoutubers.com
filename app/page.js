@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import _ from "lodash";
-import { toHumanString } from "human-readable-numbers";
 import Fuse from "fuse.js";
 
 import { orderBySubscribersDesc } from "../lib/channels";
+
+import ChannelCard from "./ChannelCard";
 
 import channels from "../data/members.json";
 import topics from "../data/topics.json";
@@ -66,30 +66,9 @@ export default function Page() {
         ))}
       </div>
 
-      <div
-        id="channels"
-        className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12"
-      >
-        {activeChannels.map(({ id, snippet, statistics }) => (
-          <div key={id} className="">
-            <div className="float-left not-prose pr-10">
-              <a href={`https://youtube.com/channel/${id}`}>
-                <Image
-                  width={144}
-                  height={144}
-                  alt=""
-                  className="rounded-full"
-                  src={snippet.thumbnails.medium.url}
-                />
-              </a>
-            </div>
-            <div className="">
-              <a href={`https://youtube.com/channel/${id}`}>
-                {snippet.title} • {toHumanString(statistics.subscriberCount)}
-              </a>
-              <p className="line-clamp-6 text-xs">{snippet.description}</p>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12">
+        {activeChannels.map((channel) => (
+          <ChannelCard key={channel.id} channel={channel} />
         ))}
       </div>
 
@@ -99,27 +78,9 @@ export default function Page() {
         <></>
       )}
 
-      <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {inactiveChannels.map(({ id, snippet, statistics }) => (
-          <div key={id} className="grid grid-cols-3 gap-8">
-            <div className="col-span-1 not-prose">
-              <a href={`https://youtube.com/channel/${id}`}>
-                <Image
-                  width={144}
-                  height={144}
-                  alt=""
-                  className="rounded-full"
-                  src={snippet.thumbnails.medium.url}
-                />
-              </a>
-            </div>
-            <div className="col-span-2">
-              <a href={`https://youtube.com/channel/${id}`}>
-                {snippet.title} • {toHumanString(statistics.subscriberCount)}
-              </a>
-              <p className="line-clamp-4 mt-2 text-xs">{snippet.description}</p>
-            </div>
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {inactiveChannels.map((channel) => (
+          <ChannelCard key={channel.id} channel={channel} />
         ))}
       </div>
     </>

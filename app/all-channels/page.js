@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import _ from "lodash";
 import Link from "next/link";
-import { toHumanString } from "human-readable-numbers";
 import Fuse from "fuse.js";
+
+import ChannelCard from "../ChannelCard";
 
 import { orderBySubscribersDesc } from "../../lib/channels";
 
@@ -67,34 +67,8 @@ export default function Page() {
       </div>
 
       <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {channelsSortedBySubs.map(({ id, snippet, statistics, isMember }) => (
-          <div
-            key={id}
-            className={`grid grid-cols-3 gap-8 ${
-              isMember ? "ityoutubers-member" : ""
-            }`}
-          >
-            <div className="col-span-1 not-prose">
-              <a href={`https://youtube.com/channel/${id}`}>
-                <Image
-                  width={144}
-                  height={144}
-                  alt=""
-                  className="rounded-full"
-                  src={snippet.thumbnails.medium.url}
-                />
-              </a>
-            </div>
-            <div className="col-span-2">
-              <a
-                className="channel-name"
-                href={`https://youtube.com/channel/${id}`}
-              >
-                {snippet.title} • {toHumanString(statistics.subscriberCount)}
-              </a>
-              <p className="line-clamp-4 mt-2 text-xs">{snippet.description}</p>
-            </div>
-          </div>
+        {channelsSortedBySubs.map((channel) => (
+          <ChannelCard key={channel.id} channel={channel} />
         ))}
       </div>
     </>
