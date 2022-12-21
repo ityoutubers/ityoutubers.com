@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                   className="inline"
                   width={21}
                   height={20.5}
-                  src="github-mark.svg"
+                  src="/github-mark.svg"
                 />
               </a>{" "}
               Сделано с помощью 💩 🪵 🌀 в 2022
