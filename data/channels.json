@@ -14,8 +14,8 @@
       }
     },
     "statistics": {
-      "viewCount": "4087782",
-      "subscriberCount": "42500",
+      "viewCount": "4092051",
+      "subscriberCount": "42600",
       "hiddenSubscriberCount": false,
       "videoCount": "124"
     },
@@ -35,6 +35,78 @@
     ]
   },
   {
+    "id": "UC2vcuP7iWaX0MVG6hJ-cOkg",
+    "snippet": {
+      "title": "Vladimir Medintsev",
+      "description": "Канал о технике, радиоэлектронике и конструировании. \nЭто мой личный блог как инженера и разработчика. В роликах я излагаю свое личное, порой весьма субъективное мнение, которое ни в коем случае не является истиной в последней инстанции. Рассказываю о том, как создаются различные электронные устройства. О интересных технологиях и просто забавных находках.\n\nСозданная при моем участии программа обучения - https://go.redav.online/198c03d37cf84410\nПереходите по ссылке, получайте скидки, станьте частью команды.\n\nРезервный канал на Rutube - https://rutube.ru/channel/1797552/\nКанал на Яндекс.Дзен - https://zen.yandex.ru/vladimir_medintsev\nОсновной источник информации - канал в Телеграмм - https://t.me/vladimir_medintsev \nОставайтесь на связи!!!\n\nДля деловых контактов и предложений о сотрудничестве пишите на электронную почту - vmedintsev@yandex.ru",
+      "customUrl": "@vladimirmedintsev",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu8e7FOls_ZuRfW0ONbanh_6nkyQ9PXXVHS4iwRdoQ=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "defaultLanguage": "ru",
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "2358203",
+      "subscriberCount": "26100",
+      "hiddenSubscriberCount": false,
+      "videoCount": "218"
+    },
+    "lastVideo": {
+      "id": "Q2P4REeW7tk",
+      "publishedAt": "2022-12-03T22:29:13Z",
+      "title": "-60 градусов. Экстремальное тестирование при низких температурах.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/Q2P4REeW7tk/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "edbf7b06-7baa-416c-b860-c9f2b9b7a4de"
+    ]
+  },
+  {
+    "id": "UC4C2TcZSwrXn1VClk5snpgg",
+    "snippet": {
+      "title": "anetto",
+      "description": "Различные нюансы из жизни разработчика на Python и не только — python, bash, linux, тесты, командная разработка. Разбираю код, нахожу и устраняю проблемы, превращаю плохой код в хороший. Разбираю смежные с разработкой технические навыки, полезные для работы и резюме. Показываю разные инструменты, в том числе git, bash, docker.\n\nГодный текстовый материал ежедневно в телеграмм-канале DevFM.\n",
+      "customUrl": "@mranetto",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/GwKO_1CQpxzbk4fBbJ9RXhSIK8CYHwO7ONWw60ms3zVCpcVt8NtMwIjChOD1R3MFr-zRKMaA=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      }
+    },
+    "statistics": {
+      "viewCount": "1556",
+      "subscriberCount": "214",
+      "hiddenSubscriberCount": false,
+      "videoCount": "3"
+    },
+    "lastVideo": {
+      "id": "s_cOuyMpmiQ",
+      "publishedAt": "2022-08-31T19:43:25Z",
+      "title": "Стрим: python student часть 1 | Stream: python student part 1",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/s_cOuyMpmiQ/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29"
+    ]
+  },
+  {
     "id": "UC6Sd8V68RcFXrvlWXabqIaA",
     "snippet": {
       "title": "Natalia Davydova",
@@ -49,7 +121,7 @@
       }
     },
     "statistics": {
-      "viewCount": "38840",
+      "viewCount": "38955",
       "subscriberCount": "1890",
       "hiddenSubscriberCount": false,
       "videoCount": "16"
@@ -86,7 +158,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "72688",
+      "viewCount": "72803",
       "subscriberCount": "2380",
       "hiddenSubscriberCount": false,
       "videoCount": "44"
@@ -107,6 +179,42 @@
     ]
   },
   {
+    "id": "UC7enHM_oJRYJOnyJrcRzwbg",
+    "snippet": {
+      "title": "WebDesign Master",
+      "description": "Уникальные авторские уроки и курсы по созданию сайтов, профессиональной верстке и современному веб-дизайну.\n",
+      "customUrl": "@wdm",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/S7mowm8wxEGtUk0w7iVRaTRfc6obGV7z0EhDBYGABcE7o5vcKOYBfQQnfTyFHseRBnge1ZJQRLU=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      }
+    },
+    "statistics": {
+      "viewCount": "15386518",
+      "subscriberCount": "260000",
+      "hiddenSubscriberCount": false,
+      "videoCount": "149"
+    },
+    "lastVideo": {
+      "id": "oT0FN1PtmRU",
+      "publishedAt": "2022-12-05T07:03:02Z",
+      "title": "Создание сайта портфолио с крутой анимацией | HTML CSS JS",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/oT0FN1PtmRU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "6b395d2a-f76d-42c1-9be6-cf3c190c2750",
+      "d5be8ceb-cc31-4af1-ba31-ba080edd9c03"
+    ]
+  },
+  {
     "id": "UC7f5bVxWsm3jlZIPDzOMcAg",
     "snippet": {
       "title": "Хауди Хо™ - Просто о мире IT!",
@@ -122,17 +230,17 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "178889860",
+      "viewCount": "179067563",
       "subscriberCount": "1800000",
       "hiddenSubscriberCount": false,
-      "videoCount": "397"
+      "videoCount": "398"
     },
     "lastVideo": {
-      "id": "cJbvPGCqW8s",
-      "publishedAt": "2022-12-15T18:41:51Z",
-      "title": "Я сделал ИИ для Aim Lab и она его уничтожила :3",
+      "id": "ygSA6BwdopU",
+      "publishedAt": "2022-12-20T17:44:04Z",
+      "title": "Я сделал ИИ для AWP в CS:GO :3 | Компьютерное зрение",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/cJbvPGCqW8s/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ygSA6BwdopU/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -158,8 +266,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "266226",
-      "subscriberCount": "8500",
+      "viewCount": "266428",
+      "subscriberCount": "8510",
       "hiddenSubscriberCount": false,
       "videoCount": "49"
     },
@@ -194,7 +302,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "18540553",
+      "viewCount": "18553987",
       "subscriberCount": "200000",
       "hiddenSubscriberCount": false,
       "videoCount": "437"
@@ -230,17 +338,17 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "9070348",
+      "viewCount": "9091643",
       "subscriberCount": "134000",
       "hiddenSubscriberCount": false,
-      "videoCount": "148"
+      "videoCount": "149"
     },
     "lastVideo": {
-      "id": "dx7F7VqnsVQ",
-      "publishedAt": "2022-12-14T17:03:41Z",
-      "title": "70 книг по IT, которые надо прочесть. Как писать хорошо, языки, тесты, БД, безопасность, soft skills",
+      "id": "s7g7ZUCZ2q8",
+      "publishedAt": "2022-12-20T15:51:25Z",
+      "title": "Теоретический минимум по CS: логические вентили, булева алгебра, сумматоры. Читаем главу 1 «Основы»",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/dx7F7VqnsVQ/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/s7g7ZUCZ2q8/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -254,12 +362,12 @@
   {
     "id": "UCAkMlyQYLsmhYEtYRj6KP7A",
     "snippet": {
-      "title": "LAMPOVOE IT",
+      "title": "Sergii Alekseev",
       "description": "LAMPOVOE IT - это место, где любой человек из сферы ИТ, может стать спикером в онлайне или посетителем любого доклада без надобности ожидания или оплаты денег. Может поделиться своим опытом в режиме онлайн\n\nВсе что необходимо сделать - это записать видео, на подобии тех, что уже есть на канале и написать сообщение на \nemail - nowisglobalworld@gmail.com\ntelegram - @sergiialekseev\n\nSite - https://lampovoeit.space/\nChat - https://t.me/BA_PO_PM_PdM\nQA Chat - https://t.me/qa_mates\nAtlassian Chat - https://t.me/Atlassian_CIS\n\nДавайте создавать этот канал вместе!",
       "customUrl": "@lampovoeit",
       "thumbnails": {
         "medium": {
-          "url": "https://yt3.ggpht.com/ytc/AMLnZu-p0AbNs1VhL0LTAcLb9TvIEeLfjpp2qURcVOe9EaM=s240-c-k-c0x00ffffff-no-rj",
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu-HahxuOQGUK3rax5pRIyDzzZb0Pb2oMFt3T71rf8w=s240-c-k-c0x00ffffff-no-rj",
           "width": 240,
           "height": 240
         }
@@ -267,7 +375,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "169341",
+      "viewCount": "169651",
       "subscriberCount": "5030",
       "hiddenSubscriberCount": false,
       "videoCount": "74"
@@ -303,17 +411,17 @@
       "country": "IE"
     },
     "statistics": {
-      "viewCount": "133855",
-      "subscriberCount": "1840",
+      "viewCount": "134126",
+      "subscriberCount": "1830",
       "hiddenSubscriberCount": false,
-      "videoCount": "90"
+      "videoCount": "91"
     },
     "lastVideo": {
-      "id": "h0JXEop-lNA",
-      "publishedAt": "2022-01-28T20:01:06Z",
-      "title": "Пишем код на стриме | Пятничный ламповый стрим",
+      "id": "JxETb3i8rGg",
+      "publishedAt": "2022-12-21T11:00:10Z",
+      "title": "Історія компанії Apple за 1 хвилину",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/h0JXEop-lNA/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/JxETb3i8rGg/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -321,6 +429,42 @@
     "topics": [
       "796c25b4-309f-40ae-aef7-ff07802988b5",
       "cdc0bdcb-2678-43bc-bb72-50e68dcfb332"
+    ]
+  },
+  {
+    "id": "UCBLthWZ0AdU-tTpKCBs8PGQ",
+    "snippet": {
+      "title": "Kofybrek",
+      "description": "This channel is about having fun with programming!\n\nHere you'll find cool algorithm visualizations, game development, working with artificial intelligence and machine learning, etc.\n\nI use C++ most of the time because it's my favorite (and also the only programming language I know).\n",
+      "customUrl": "@kofybrek",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/dzOmG3aQ8NvF5se6e-7yaZiKkzMumbNHPIRrOFMpB_8SIY9og5tLJZnJJqDqlytBi8PrqhrYeQ=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "US"
+    },
+    "statistics": {
+      "viewCount": "219484",
+      "subscriberCount": "5570",
+      "hiddenSubscriberCount": false,
+      "videoCount": "15"
+    },
+    "lastVideo": {
+      "id": "YQyLDnKRnnw",
+      "publishedAt": "2022-09-30T19:12:00Z",
+      "title": "How I FAILED in My First Ever GAME JAM - Wowie Game Jam 4.0",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/YQyLDnKRnnw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "ea9f89a1-4e4b-4453-a1f6-f2e9c0a19c90",
+      "b1c24d21-616f-42cd-a415-f5da160a2e2c"
     ]
   },
   {
@@ -339,8 +483,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "3490945",
-      "subscriberCount": "69200",
+      "viewCount": "3494886",
+      "subscriberCount": "69300",
       "hiddenSubscriberCount": false,
       "videoCount": "243"
     },
@@ -375,8 +519,8 @@
       }
     },
     "statistics": {
-      "viewCount": "172410",
-      "subscriberCount": "3610",
+      "viewCount": "173398",
+      "subscriberCount": "3630",
       "hiddenSubscriberCount": false,
       "videoCount": "52"
     },
@@ -413,8 +557,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "4609968",
-      "subscriberCount": "73900",
+      "viewCount": "4614162",
+      "subscriberCount": "74000",
       "hiddenSubscriberCount": false,
       "videoCount": "130"
     },
@@ -449,7 +593,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1072607",
+      "viewCount": "1072903",
       "subscriberCount": "12200",
       "hiddenSubscriberCount": false,
       "videoCount": "125"
@@ -487,8 +631,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "2415029",
-      "subscriberCount": "54700",
+      "viewCount": "2419854",
+      "subscriberCount": "54800",
       "hiddenSubscriberCount": false,
       "videoCount": "231"
     },
@@ -524,7 +668,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "143254",
+      "viewCount": "143590",
       "subscriberCount": "3060",
       "hiddenSubscriberCount": false,
       "videoCount": "88"
@@ -562,7 +706,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "11826031",
+      "viewCount": "11834677",
       "subscriberCount": "107000",
       "hiddenSubscriberCount": false,
       "videoCount": "1170"
@@ -600,8 +744,8 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "1137292",
-      "subscriberCount": "15200",
+      "viewCount": "1141080",
+      "subscriberCount": "15300",
       "hiddenSubscriberCount": false,
       "videoCount": "88"
     },
@@ -636,17 +780,17 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "362688",
-      "subscriberCount": "8170",
+      "viewCount": "365955",
+      "subscriberCount": "8200",
       "hiddenSubscriberCount": false,
       "videoCount": "76"
     },
     "lastVideo": {
-      "id": "pnXRCazvay4",
-      "publishedAt": "2022-12-19T07:00:10Z",
-      "title": "Все про Pattern Matching в C#. Эволюция до 11й версии. Когда использовать?",
+      "id": "jpIJ7gO4ImQ",
+      "publishedAt": "2022-12-20T16:07:03Z",
+      "title": "Меряем производительность запросов: модуль статистики в ПО для load testing на .NET +немного ChatGPT",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/pnXRCazvay4/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/jpIJ7gO4ImQ/hqdefault_live.jpg",
         "width": 480,
         "height": 360
       }
@@ -654,6 +798,43 @@
     "topics": [
       "892dc2a2-0336-4388-9fa8-a89f65baa67a",
       "0c72b25e-dd1f-4683-ad01-419eb5425023"
+    ]
+  },
+  {
+    "id": "UCHkwlexIsoJVa5g_G9g18GA",
+    "snippet": {
+      "title": "Johannes 4GNU_Linux",
+      "description": "Here on my Channel I put out some videos about GNU/Linux with a focus on applications for automation and Embedded Systems. But here are also some videos about some useful tools you can use on GNU/Linux.",
+      "customUrl": "@johannes4gnu_linux96",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu-lLrVUSxGHGqpq56dGHpskbmCXYv1j5rEUCVwP=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "DE"
+    },
+    "statistics": {
+      "viewCount": "419396",
+      "subscriberCount": "5390",
+      "hiddenSubscriberCount": false,
+      "videoCount": "122"
+    },
+    "lastVideo": {
+      "id": "AhBPEC3Q0wM",
+      "publishedAt": "2022-12-21T07:00:02Z",
+      "title": "AVR Advent Calendar - 21: Attiny USI I2C Master",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/AhBPEC3Q0wM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "ea9f89a1-4e4b-4453-a1f6-f2e9c0a19c90",
+      "edbf7b06-7baa-416c-b860-c9f2b9b7a4de",
+      "8409ed76-cdb1-49dd-974c-3b54ac1e3ba1"
     ]
   },
   {
@@ -672,8 +853,8 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "258996",
-      "subscriberCount": "6750",
+      "viewCount": "259862",
+      "subscriberCount": "6780",
       "hiddenSubscriberCount": false,
       "videoCount": "62"
     },
@@ -708,8 +889,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "6362",
-      "subscriberCount": "668",
+      "viewCount": "6384",
+      "subscriberCount": "669",
       "hiddenSubscriberCount": false,
       "videoCount": "9"
     },
@@ -744,8 +925,8 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "411090",
-      "subscriberCount": "9580",
+      "viewCount": "411281",
+      "subscriberCount": "9590",
       "hiddenSubscriberCount": false,
       "videoCount": "97"
     },
@@ -765,6 +946,41 @@
     ]
   },
   {
+    "id": "UCISX5a9OLJekJHP9HoBw6ZA",
+    "snippet": {
+      "title": "Добры курс",
+      "description": "Курсы праграмавання для школьнікаў і пачаткоўцаў. ",
+      "customUrl": "@dobrykurs",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/NHZ0wCEW6tklzSg6DX2RDysKtjYBY0v2uK-f59OpmM0lnuII7EuCfA4vaafj-6OKfLhdo3TH=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      }
+    },
+    "statistics": {
+      "viewCount": "1314",
+      "subscriberCount": "186",
+      "hiddenSubscriberCount": false,
+      "videoCount": "4"
+    },
+    "lastVideo": {
+      "id": "RF0phSPP_LA",
+      "publishedAt": "2022-12-19T09:08:14Z",
+      "title": "Рашэнні. Вывад даных на кансоль. Каментары. Пераменныя.",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/RF0phSPP_LA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "50085811-fcf0-4cff-8e89-cd65fa299fa5",
+      "37545c2b-ff7e-48c7-8581-2aeb27f1e851"
+    ]
+  },
+  {
     "id": "UCJGVgS1tfWKSw_Nxi7zFldA",
     "snippet": {
       "title": "imba Ninja",
@@ -780,7 +996,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "88828",
+      "viewCount": "88853",
       "subscriberCount": "7320",
       "hiddenSubscriberCount": false,
       "videoCount": "33"
@@ -817,7 +1033,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "2430383",
+      "viewCount": "2432823",
       "subscriberCount": "53200",
       "hiddenSubscriberCount": false,
       "videoCount": "40"
@@ -853,8 +1069,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "83911",
-      "subscriberCount": "1940",
+      "viewCount": "84443",
+      "subscriberCount": "1950",
       "hiddenSubscriberCount": false,
       "videoCount": "136"
     },
@@ -889,8 +1105,8 @@
       "country": "BY"
     },
     "statistics": {
-      "viewCount": "1678216",
-      "subscriberCount": "17600",
+      "viewCount": "1681762",
+      "subscriberCount": "17700",
       "hiddenSubscriberCount": false,
       "videoCount": "226"
     },
@@ -926,17 +1142,17 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "4801946",
+      "viewCount": "4803060",
       "subscriberCount": "43900",
       "hiddenSubscriberCount": false,
       "videoCount": "460"
     },
     "lastVideo": {
-      "id": "0Y7vipAhoC0",
-      "publishedAt": "2022-12-19T11:40:29Z",
-      "title": "Конспект книги \"Запомнить все\" (Stick It)",
+      "id": "B4_n_13OfuE",
+      "publishedAt": "2022-12-21T10:43:11Z",
+      "title": "Ответы на вопросы о программировании - стрим 22.12.2022",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/0Y7vipAhoC0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/B4_n_13OfuE/hqdefault_live.jpg",
         "width": 480,
         "height": 360
       }
@@ -963,7 +1179,7 @@
       }
     },
     "statistics": {
-      "viewCount": "1667",
+      "viewCount": "1669",
       "subscriberCount": "215",
       "hiddenSubscriberCount": false,
       "videoCount": "2"
@@ -999,7 +1215,7 @@
       "country": "US"
     },
     "statistics": {
-      "viewCount": "1033154",
+      "viewCount": "1033708",
       "subscriberCount": "9550",
       "hiddenSubscriberCount": false,
       "videoCount": "181"
@@ -1035,8 +1251,8 @@
       "country": "LV"
     },
     "statistics": {
-      "viewCount": "510133",
-      "subscriberCount": "9480",
+      "viewCount": "512877",
+      "subscriberCount": "9510",
       "hiddenSubscriberCount": false,
       "videoCount": "152"
     },
@@ -1058,6 +1274,44 @@
     ]
   },
   {
+    "id": "UCN8F8z4wIicwkm4X7Tk3BOQ",
+    "snippet": {
+      "title": "Александр Григорин",
+      "description": "Канал Александра Григорина. Цинизм, сексизм и научное мировоззрение нон-стоп 24/7.",
+      "customUrl": "@grigorin",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu-4kJaWocCy4iSMq-8FlOjJb3N1KCoXSPpyg9pJ=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "1081796",
+      "subscriberCount": "11300",
+      "hiddenSubscriberCount": false,
+      "videoCount": "299"
+    },
+    "lastVideo": {
+      "id": "57E1a1ZxHh8",
+      "publishedAt": "2022-12-13T21:14:14Z",
+      "title": "Чёрный властелин Computer Science: Парето оптимальные решения",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/57E1a1ZxHh8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "38172a57-6066-434e-b228-1c15b997e7c3",
+      "6b395d2a-f76d-42c1-9be6-cf3c190c2750",
+      "d369fa35-3b02-46e5-b1b4-3ae84f452f50"
+    ]
+  },
+  {
     "id": "UCOTSosw_E-Cr88QkAb1Mdsg",
     "snippet": {
       "title": "SkanerSoft",
@@ -1074,8 +1328,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "2614655",
-      "subscriberCount": "36800",
+      "viewCount": "2618617",
+      "subscriberCount": "36900",
       "hiddenSubscriberCount": false,
       "videoCount": "110"
     },
@@ -1110,7 +1364,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1087689",
+      "viewCount": "1088977",
       "subscriberCount": "32900",
       "hiddenSubscriberCount": false,
       "videoCount": "32"
@@ -1146,7 +1400,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "222772",
+      "viewCount": "223048",
       "subscriberCount": "2070",
       "hiddenSubscriberCount": false,
       "videoCount": "67"
@@ -1182,8 +1436,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "429265",
-      "subscriberCount": "6890",
+      "viewCount": "430566",
+      "subscriberCount": "6920",
       "hiddenSubscriberCount": false,
       "videoCount": "130"
     },
@@ -1219,8 +1473,8 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "167392",
-      "subscriberCount": "1230",
+      "viewCount": "167491",
+      "subscriberCount": "1240",
       "hiddenSubscriberCount": false,
       "videoCount": "150"
     },
@@ -1255,8 +1509,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "210661",
-      "subscriberCount": "4030",
+      "viewCount": "214271",
+      "subscriberCount": "4060",
       "hiddenSubscriberCount": false,
       "videoCount": "45"
     },
@@ -1277,6 +1531,45 @@
     ]
   },
   {
+    "id": "UCTJacQ2o8eCe09OI0G7PIYw",
+    "snippet": {
+      "title": "NR.electronics",
+      "description": "Канал для изучающих и практикующих в области электроники, схемотехники, программирования самых различных микроконтроллеров, таких как: STM32, NXP,  Renesas и даже Milandr  - K1986BE92QI. \nТакже на канале предоставляется бесплатно, для собственного самообразования или повышения квалификации, большой и детальной курс по программированию на языке С (С11/С18) с учётом правил программирования MISRA C, стандартов кодирования CERT и отдельная серия видео по правилам MISRA C.\n\nЭлектронная почта для предложений о сотрудничестве - nr.electronicss@gmail.com\nили в личку в https://vk.com/nr.electronics\n\nТелеграм:\nhttps://t.me/NR_electronics\n\nПо России:\nhttps://money.yandex.ru/to/4100115727245290\nВозможна работа с ИП и юр. лицами.\n\nI share my experience and practical knowledge through engineering lectures.\nThe channel is about electronics, programming of microcontrollers and topics related to them.\nEmail for cooperation offers - nr.electronicss@gmail.com.",
+      "customUrl": "@nrelectronics",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu-xzkPVJcQQCrrmrBsyKm6bGWIjacx0GNIX1EAu=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "defaultLanguage": "ru",
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "938977",
+      "subscriberCount": "12600",
+      "hiddenSubscriberCount": false,
+      "videoCount": "185"
+    },
+    "lastVideo": {
+      "id": "7psawjubHPI",
+      "publishedAt": "2022-12-10T11:46:25Z",
+      "title": "TouchGFX. Воспроизводим .avi видеоролик на микроконтроллере STM32 !!!",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/7psawjubHPI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "81e16642-c02c-4701-ab32-22bb5ff3a506",
+      "edbf7b06-7baa-416c-b860-c9f2b9b7a4de",
+      "6b395d2a-f76d-42c1-9be6-cf3c190c2750"
+    ]
+  },
+  {
     "id": "UCTSVfbCKN3nZbogPtOCHcMg",
     "snippet": {
       "title": "devschacht",
@@ -1292,7 +1585,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "720904",
+      "viewCount": "721694",
       "subscriberCount": "17100",
       "hiddenSubscriberCount": false,
       "videoCount": "103"
@@ -1328,17 +1621,17 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "35491582",
-      "subscriberCount": "324000",
+      "viewCount": "35544877",
+      "subscriberCount": "325000",
       "hiddenSubscriberCount": false,
-      "videoCount": "891"
+      "videoCount": "892"
     },
     "lastVideo": {
-      "id": "h-VBBkrAsqQ",
-      "publishedAt": "2022-12-19T14:48:04Z",
-      "title": "Прямой эфир про образование программиста",
+      "id": "C1tvFPMiFRk",
+      "publishedAt": "2022-12-20T08:00:08Z",
+      "title": "Релиз Linux 6.1, много Apple, а AlphaCode решает любые задачи программирования",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/h-VBBkrAsqQ/hqdefault_live.jpg",
+        "url": "https://i.ytimg.com/vi/C1tvFPMiFRk/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -1366,7 +1659,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "6838282",
+      "viewCount": "6844690",
       "subscriberCount": "134000",
       "hiddenSubscriberCount": false,
       "videoCount": "148"
@@ -1402,17 +1695,17 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "7458153",
-      "subscriberCount": "131000",
+      "viewCount": "7472332",
+      "subscriberCount": "132000",
       "hiddenSubscriberCount": false,
-      "videoCount": "144"
+      "videoCount": "145"
     },
     "lastVideo": {
-      "id": "yjCN47bK41U",
-      "publishedAt": "2022-12-10T14:47:10Z",
-      "title": "Двухфакторная аутентификация на Python",
+      "id": "p1cncg1lJNc",
+      "publishedAt": "2022-12-20T14:24:21Z",
+      "title": "ТОП Приложения для Android из F-Droid на каждый день #3",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/yjCN47bK41U/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/p1cncg1lJNc/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -1438,7 +1731,7 @@
       "country": "AE"
     },
     "statistics": {
-      "viewCount": "944070",
+      "viewCount": "944094",
       "subscriberCount": "1250",
       "hiddenSubscriberCount": false,
       "videoCount": "96"
@@ -1474,7 +1767,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1113034",
+      "viewCount": "1113521",
       "subscriberCount": "13000",
       "hiddenSubscriberCount": false,
       "videoCount": "93"
@@ -1509,8 +1802,8 @@
       }
     },
     "statistics": {
-      "viewCount": "446808",
-      "subscriberCount": "9920",
+      "viewCount": "448241",
+      "subscriberCount": "9950",
       "hiddenSubscriberCount": false,
       "videoCount": "109"
     },
@@ -1546,7 +1839,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "131826",
+      "viewCount": "132033",
       "subscriberCount": "2210",
       "hiddenSubscriberCount": false,
       "videoCount": "35"
@@ -1582,8 +1875,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "646094",
-      "subscriberCount": "16900",
+      "viewCount": "646346",
+      "subscriberCount": "17000",
       "hiddenSubscriberCount": false,
       "videoCount": "29"
     },
@@ -1621,8 +1914,8 @@
       "country": "BY"
     },
     "statistics": {
-      "viewCount": "999838",
-      "subscriberCount": "20800",
+      "viewCount": "1003134",
+      "subscriberCount": "20900",
       "hiddenSubscriberCount": false,
       "videoCount": "264"
     },
@@ -1657,7 +1950,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "111251",
+      "viewCount": "111309",
       "subscriberCount": "2100",
       "hiddenSubscriberCount": false,
       "videoCount": "14"
@@ -1694,7 +1987,7 @@
       "country": "BY"
     },
     "statistics": {
-      "viewCount": "22785741",
+      "viewCount": "22800627",
       "subscriberCount": "316000",
       "hiddenSubscriberCount": false,
       "videoCount": "292"
@@ -1730,17 +2023,17 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "29434479",
-      "subscriberCount": "306000",
+      "viewCount": "29483486",
+      "subscriberCount": "307000",
       "hiddenSubscriberCount": false,
-      "videoCount": "216"
+      "videoCount": "217"
     },
     "lastVideo": {
-      "id": "7E6lHqmf4FY",
-      "publishedAt": "2022-12-12T12:20:46Z",
-      "title": "Адаптивна верстка сайту для початківців. Пояснення дій. HTML CSS JS FIGMA. Майстер-клас з верстки",
+      "id": "BYUe8Vr9gKs",
+      "publishedAt": "2022-12-21T09:13:29Z",
+      "title": "Меню з цікавим ефектом при наведенні. HTML CSS JAVASCRIPT. Як це зробити?",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/7E6lHqmf4FY/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/BYUe8Vr9gKs/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -1767,7 +2060,7 @@
       "country": "BY"
     },
     "statistics": {
-      "viewCount": "4397112",
+      "viewCount": "4398466",
       "subscriberCount": "45600",
       "hiddenSubscriberCount": false,
       "videoCount": "111"
@@ -1804,8 +2097,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "26320016",
-      "subscriberCount": "263000",
+      "viewCount": "26357890",
+      "subscriberCount": "264000",
       "hiddenSubscriberCount": false,
       "videoCount": "206"
     },
@@ -1841,7 +2134,7 @@
       "country": "US"
     },
     "statistics": {
-      "viewCount": "1147508",
+      "viewCount": "1147673",
       "subscriberCount": "29700",
       "hiddenSubscriberCount": false,
       "videoCount": "27"
@@ -1877,7 +2170,7 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "1960332",
+      "viewCount": "1962591",
       "subscriberCount": "34500",
       "hiddenSubscriberCount": false,
       "videoCount": "308"
@@ -1914,7 +2207,7 @@
       "country": "US"
     },
     "statistics": {
-      "viewCount": "614573",
+      "viewCount": "616571",
       "subscriberCount": "16400",
       "hiddenSubscriberCount": false,
       "videoCount": "99"
@@ -1950,8 +2243,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1655544",
-      "subscriberCount": "30200",
+      "viewCount": "1660596",
+      "subscriberCount": "30300",
       "hiddenSubscriberCount": false,
       "videoCount": "184"
     },
@@ -1987,7 +2280,7 @@
       "country": "BY"
     },
     "statistics": {
-      "viewCount": "16876",
+      "viewCount": "16880",
       "subscriberCount": "354",
       "hiddenSubscriberCount": false,
       "videoCount": "19"
@@ -2023,8 +2316,8 @@
       "country": "UA"
     },
     "statistics": {
-      "viewCount": "515938",
-      "subscriberCount": "6360",
+      "viewCount": "517076",
+      "subscriberCount": "6380",
       "hiddenSubscriberCount": false,
       "videoCount": "186"
     },
@@ -2046,6 +2339,45 @@
     ]
   },
   {
+    "id": "UClJzWfGWuGJL2t-3dYKcHTA",
+    "snippet": {
+      "title": "selfedu",
+      "description": "Видеоуроки по математике, алгоритмам обработки данных (в том числе по нейронным сетям), по языкам программирования: С, С++, Java, Python (Питон), JavaScript, HTML, CSS, а также по их многочисленным библиотекам.\n\nБуду рад любой посильной поддержке канала через спонсорство или на\n\nYoomoney-кошелек: 410017009233821\n\nА также видеть вас на телеграм-каналах:\n\nКанал selfedu_rus: https://t.me/selfedu_rus\nPython: https://t.me/python_selfedu\nDjango: https://t.me/django_selfedu\nМашинное обучение: https://t.me/machine_learning_selfedu\n\nБлагодарю всех подписчиков и посетителей этого образовательного ресурса за проявленный интерес к обучающим видео.\n",
+      "customUrl": "@selfedu_rus",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/ytc/AMLnZu-ibJeT06FeTlE-Q_UhehftbLJMk5Tn2USE63a7=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "RU"
+    },
+    "statistics": {
+      "viewCount": "10824046",
+      "subscriberCount": "89900",
+      "hiddenSubscriberCount": false,
+      "videoCount": "888"
+    },
+    "lastVideo": {
+      "id": "h3bDt4xgFRk",
+      "publishedAt": "2022-12-18T06:00:11Z",
+      "title": "#28. Использование хэш-таблиц в Python и С++ | Структуры данных",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/h3bDt4xgFRk/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "c5ad90e1-8247-4948-b621-8e796ad59b1a",
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "19e0b1c7-5a5d-4a4b-aee6-447a01485856",
+      "c02e0217-a4c1-45ac-9b04-8e0de2cdcf29",
+      "38172a57-6066-434e-b228-1c15b997e7c3"
+    ]
+  },
+  {
     "id": "UClndvajuNPjUjFcKcg0X8OA",
     "snippet": {
       "title": "Глеб Михайлов",
@@ -2060,7 +2392,7 @@
       }
     },
     "statistics": {
-      "viewCount": "591863",
+      "viewCount": "594005",
       "subscriberCount": "12800",
       "hiddenSubscriberCount": false,
       "videoCount": "227"
@@ -2096,7 +2428,7 @@
       "country": "US"
     },
     "statistics": {
-      "viewCount": "440282",
+      "viewCount": "440446",
       "subscriberCount": "14700",
       "hiddenSubscriberCount": false,
       "videoCount": "37"
@@ -2117,6 +2449,43 @@
     ]
   },
   {
+    "id": "UCmyAe3COIgLvuArriX51xWw",
+    "snippet": {
+      "title": "Doubletapp",
+      "description": "Канал компании Doubletapp.\n\nМы создаем цифровые продукты полного цикла. На канале публикуем образовательные ролики для IT-специалистов, делаем обзоры на технику, делимся фрагментами с мероприятий из мира IT.\n",
+      "customUrl": "@doubletapp9440",
+      "thumbnails": {
+        "medium": {
+          "url": "https://yt3.ggpht.com/MjRCXNOBgeLH1GyHaFRlsYoX6dAW0AvyNoNRQSZNVaiRV64u7kBwNtzSozQhzn20NXrac6GFaA=s240-c-k-c0x00ffffff-no-rj",
+          "width": 240,
+          "height": 240
+        }
+      },
+      "country": "GE"
+    },
+    "statistics": {
+      "viewCount": "104637",
+      "subscriberCount": "1800",
+      "hiddenSubscriberCount": false,
+      "videoCount": "70"
+    },
+    "lastVideo": {
+      "id": "cC9WOZ0gwFU",
+      "publishedAt": "2022-12-14T11:13:27Z",
+      "title": "«Ты в России?» — насущный вопрос последних трех месяцев. Что ответили гости #TaglineAwards2022?",
+      "thumbnail": {
+        "url": "https://i.ytimg.com/vi/cC9WOZ0gwFU/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "topics": [
+      "0c72b25e-dd1f-4683-ad01-419eb5425023",
+      "a4c7e610-8792-44b2-93a0-dcbc7131ced4",
+      "6b395d2a-f76d-42c1-9be6-cf3c190c2750"
+    ]
+  },
+  {
     "id": "UCn-1dFs5zT1nIFz3cMKGx-g",
     "snippet": {
       "title": "Ian Solomein",
@@ -2132,8 +2501,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "709261",
-      "subscriberCount": "10600",
+      "viewCount": "710957",
+      "subscriberCount": "10700",
       "hiddenSubscriberCount": false,
       "videoCount": "99"
     },
@@ -2169,8 +2538,8 @@
       "country": "KZ"
     },
     "statistics": {
-      "viewCount": "400728",
-      "subscriberCount": "5730",
+      "viewCount": "401476",
+      "subscriberCount": "5740",
       "hiddenSubscriberCount": false,
       "videoCount": "118"
     },
@@ -2205,7 +2574,7 @@
       "country": "MD"
     },
     "statistics": {
-      "viewCount": "2473014",
+      "viewCount": "2474411",
       "subscriberCount": "65800",
       "hiddenSubscriberCount": false,
       "videoCount": "294"
@@ -2242,7 +2611,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "742189",
+      "viewCount": "742456",
       "subscriberCount": "10600",
       "hiddenSubscriberCount": false,
       "videoCount": "69"
@@ -2278,7 +2647,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1484911",
+      "viewCount": "1487056",
       "subscriberCount": "25400",
       "hiddenSubscriberCount": false,
       "videoCount": "67"
@@ -2313,17 +2682,17 @@
       }
     },
     "statistics": {
-      "viewCount": "10762758",
+      "viewCount": "10769558",
       "subscriberCount": "221000",
       "hiddenSubscriberCount": false,
-      "videoCount": "525"
+      "videoCount": "527"
     },
     "lastVideo": {
-      "id": "qSb0KRYsBJc",
-      "publishedAt": "2022-12-19T16:32:08Z",
-      "title": "Топ странных заказчиков на фрилансе: откровенно",
+      "id": "p2vi7SGoC24",
+      "publishedAt": "2022-12-20T16:00:10Z",
+      "title": "Основы веб дизайна  Figma",
       "thumbnail": {
-        "url": "https://i.ytimg.com/vi/qSb0KRYsBJc/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/p2vi7SGoC24/hqdefault.jpg",
         "width": 480,
         "height": 360
       }
@@ -2352,8 +2721,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "6604535",
-      "subscriberCount": "164000",
+      "viewCount": "6626865",
+      "subscriberCount": "165000",
       "hiddenSubscriberCount": false,
       "videoCount": "137"
     },
@@ -2388,8 +2757,8 @@
       "country": "GB"
     },
     "statistics": {
-      "viewCount": "16777079",
-      "subscriberCount": "163000",
+      "viewCount": "16880447",
+      "subscriberCount": "164000",
       "hiddenSubscriberCount": false,
       "videoCount": "329"
     },
@@ -2423,8 +2792,8 @@
       }
     },
     "statistics": {
-      "viewCount": "43851700",
-      "subscriberCount": "316000",
+      "viewCount": "43926292",
+      "subscriberCount": "317000",
       "hiddenSubscriberCount": false,
       "videoCount": "362"
     },
@@ -2460,7 +2829,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1498164",
+      "viewCount": "1498781",
       "subscriberCount": "21100",
       "hiddenSubscriberCount": false,
       "videoCount": "368"
@@ -2497,8 +2866,8 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1420059",
-      "subscriberCount": "26200",
+      "viewCount": "1477089",
+      "subscriberCount": "27200",
       "hiddenSubscriberCount": false,
       "videoCount": "181"
     },
@@ -2535,7 +2904,7 @@
       "country": "US"
     },
     "statistics": {
-      "viewCount": "215469",
+      "viewCount": "215957",
       "subscriberCount": "6210",
       "hiddenSubscriberCount": false,
       "videoCount": "31"
@@ -2571,7 +2940,7 @@
       "country": "RU"
     },
     "statistics": {
-      "viewCount": "1439764",
+      "viewCount": "1444810",
       "subscriberCount": "13200",
       "hiddenSubscriberCount": false,
       "videoCount": "169"
@@ -2607,8 +2976,8 @@
       "country": "GB"
     },
     "statistics": {
-      "viewCount": "1337099",
-      "subscriberCount": "18000",
+      "viewCount": "1342273",
+      "subscriberCount": "18100",
       "hiddenSubscriberCount": false,
       "videoCount": "235"
     },
