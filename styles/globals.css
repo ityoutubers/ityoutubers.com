@@ -34,6 +34,12 @@
     @apply grid;
     grid-template-columns: 25% 75%;
   }
+  .video-thumbnail {
+    background-position: center center;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    display: block;
+  }
   .ityoutubers-member .channel-name,
   .ityoutubers-member .video-title {
     background-size: 15px 15px;

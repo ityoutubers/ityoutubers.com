@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function VideoCard({ channel }) {
   const { isMember, lastVideo } = channel;
 
@@ -10,16 +8,12 @@ export default function VideoCard({ channel }) {
       } text-sm leading-normal relative`}
     >
       <a
-        className="not-prose block"
+        className="video-thumbnail not-prose"
         href={`https://www.youtube.com/watch?v=${lastVideo.id}`}
-      >
-        <Image
-          alt={lastVideo.title}
-          src={lastVideo.thumbnail.url}
-          height={lastVideo.thumbnail.height}
-          width={lastVideo.thumbnail.width}
-        />
-      </a>
+        style={{
+          backgroundImage: `url(${lastVideo.thumbnail.url})`,
+        }}
+      ></a>
       <a
         className="video-title"
         href={`https://www.youtube.com/watch?v=${lastVideo.id}`}
