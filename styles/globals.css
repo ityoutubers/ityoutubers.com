@@ -40,8 +40,15 @@
     background-size: cover;
     display: block;
   }
-  .ityoutubers-member .channel-name,
-  .ityoutubers-member .video-title {
+  .video-title img {
+    @apply m-0;
+    @apply mt-2;
+    @apply mr-2;
+
+    clip-path: circle(50%);
+    float: left;
+  }
+  .ityoutubers-member .channel-name {
     background-size: 15px 15px;
     background-image: url(/fav.png);
     background-repeat: no-repeat;
