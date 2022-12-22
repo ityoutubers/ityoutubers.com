@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import _ from "lodash";
 import Link from "next/link";
 import Fuse from "fuse.js";
+import useSWR from "swr";
 
 import ChannelCard from "../ChannelCard";
 import VideoCard from "../VideoCard";
@@ -13,15 +14,9 @@ import {
   orderByVideoDateDesc,
 } from "../../lib/channels";
 
-import members from "../../data/members.json";
-import channels from "../../data/channels.json";
 import topics from "../../data/topics.json";
 
-const options = {
-  threshold: 0.3,
-  keys: ["snippet.title", "snippet.description", "lastVideo.title"],
-};
-const fuse = new Fuse([...channels, ...members], options);
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Page() {
   const [query, setQuery] = useState("");
@@ -29,7 +24,17 @@ export default function Page() {
   const [channelVideo, setChannelVideo] = useState("channels");
   const [sortOrder, setSortOrder] = useState("subscribers");
 
-  const sortedChannels = [...channels, ...members].sort(
+  const { data: channels, error } = useSWR("/api/channels", fetcher);
+
+  if (!channels) return "Загружаю...";
+
+  const options = {
+    threshold: 0.3,
+    keys: ["snippet.title", "snippet.description", "lastVideo.title"],
+  };
+  const fuse = new Fuse(channels, options);
+
+  const sortedChannels = channels.sort(
     sortOrder == "subscribers" ? orderBySubscribersDesc : orderByVideoDateDesc
   );
 
