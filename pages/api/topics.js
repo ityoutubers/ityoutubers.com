@@ -1,10 +1,8 @@
 import { getTopics } from "../../lib/data";
 import t from "../../data/topics.json";
 
-export async function fetchTopics(
-  local = process.env.NODE_ENV != "production"
-) {
-  if (local) {
+export async function fetchTopics() {
+  if (process.env.USE_MOCK) {
     return t;
   }
 

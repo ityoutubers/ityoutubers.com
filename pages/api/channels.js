@@ -2,10 +2,8 @@ import { getMembers, getYouTubeChannels } from "../../lib/data";
 import c from "../../data/channels.json";
 import m from "../../data/members.json";
 
-export async function fetchChannels(
-  local = process.env.NODE_ENV != "production"
-) {
-  if (local) {
+export async function fetchChannels() {
+  if (process.env.USE_MOCK) {
     return [...m, ...c];
   }
 
