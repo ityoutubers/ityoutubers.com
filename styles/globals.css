@@ -34,7 +34,8 @@
     @apply grid;
     grid-template-columns: 25% 75%;
   }
-  .ityoutubers-member .channel-name {
+  .ityoutubers-member .channel-name,
+  .ityoutubers-member .video-title {
     background-size: 15px 15px;
     background-image: url(/fav.png);
     background-repeat: no-repeat;
