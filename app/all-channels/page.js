@@ -6,26 +6,34 @@ import Link from "next/link";
 import Fuse from "fuse.js";
 
 import ChannelCard from "../ChannelCard";
+import VideoCard from "../VideoCard";
 
-import { orderBySubscribersDesc } from "../../lib/channels";
+import {
+  orderBySubscribersDesc,
+  orderByVideoDateDesc,
+} from "../../lib/channels";
 
 import members from "../../data/members.json";
 import channels from "../../data/channels.json";
 import topics from "../../data/topics.json";
 
-const sortedChannels = [...channels, ...members].sort(orderBySubscribersDesc);
-
 const options = {
   threshold: 0.3,
-  keys: ["snippet.title", "snippet.description"],
+  keys: ["snippet.title", "snippet.description", "lastVideo.title"],
 };
-const fuse = new Fuse(sortedChannels, options);
+const fuse = new Fuse([...channels, ...members], options);
 
 export default function Page() {
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
+  const [channelVideo, setChannelVideo] = useState("channels");
+  const [sortOrder, setSortOrder] = useState("subscribers");
 
-  const channelsSortedBySubs = (
+  const sortedChannels = [...channels, ...members].sort(
+    sortOrder == "subscribers" ? orderBySubscribersDesc : orderByVideoDateDesc
+  );
+
+  const filteredChannels = (
     query ? fuse.search(query).map((i) => i.item) : sortedChannels
   ).filter((c) => !topic || c.topics.includes(topic));
 
@@ -44,10 +52,45 @@ export default function Page() {
         .
       </p>
 
+      <div className="mb-3">
+        Показать:{" "}
+        <a
+          className={`list-control ${
+            channelVideo == "channels" ? "active" : ""
+          }`}
+          onClick={() => setChannelVideo("channels")}
+        >
+          Каналы
+        </a>{" "}
+        |{" "}
+        <a
+          className={`list-control ${channelVideo == "video" ? "active" : ""}`}
+          onClick={() => setChannelVideo("video")}
+        >
+          Видео
+        </a>{" "}
+        cортировать по:{" "}
+        <a
+          className={`list-control ${
+            sortOrder == "subscribers" ? "active" : ""
+          }`}
+          onClick={() => setSortOrder("subscribers")}
+        >
+          популярности
+        </a>{" "}
+        |{" "}
+        <a
+          className={`list-control ${sortOrder == "lastVideo" ? "active" : ""}`}
+          onClick={() => setSortOrder("lastVideo")}
+        >
+          дате последнего видео
+        </a>
+      </div>
+
       <div className="mb-5">
         <input
           className="w-full"
-          placeholder="Поиск"
+          placeholder="Поиск по названию и описанию каналов, а так же по заголовку видео"
           value={query}
           type="text"
           onChange={(e) => setQuery(e.target.value)}
@@ -67,9 +110,13 @@ export default function Page() {
       </div>
 
       <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {channelsSortedBySubs.map((channel) => (
-          <ChannelCard key={channel.id} channel={channel} />
-        ))}
+        {filteredChannels.map((channel) =>
+          channelVideo == "channels" ? (
+            <ChannelCard key={channel.id} channel={channel} />
+          ) : (
+            <VideoCard key={channel.id} channel={channel} />
+          )
+        )}
       </div>
     </>
   );

@@ -41,4 +41,13 @@
     background-position-y: 3px;
     padding-left: 20px;
   }
+  .list-control {
+    cursor: pointer;
+  }
+  .list-control.active {
+    cursor: not-allowed; 
+    text-decoration-style: none;
+    color: #FE0100;
+  }
+
 }
