@@ -106,13 +106,19 @@ export default function ChannelsList({ channels, topics }) {
       </div>
 
       {channelVideo == "channels" ? (
-        <div id="channels" className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div
+          id="channels"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {filteredChannels.map((channel) => (
             <ChannelCard key={`c-${channel.id}`} channel={channel} />
           ))}
         </div>
       ) : (
-        <div id="videos" className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div
+          id="videos"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {filteredChannels.map((channel) => (
             <VideoCard key={`v-${channel.id}`} channel={channel} />
           ))}
