@@ -16,8 +16,8 @@ import {
 export default function ChannelsList({ channels, topics }) {
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
-  const [channelVideo, setChannelVideo] = useState("channels");
-  const [sortOrder, setSortOrder] = useState("subscribers");
+  const [channelVideo, setChannelVideo] = useState("video");
+  const [sortOrder, setSortOrder] = useState("lastVideo");
 
   const options = {
     threshold: 0.3,
@@ -51,6 +51,13 @@ export default function ChannelsList({ channels, topics }) {
       <div className="mb-3">
         Показать:{" "}
         <a
+          className={`list-control ${channelVideo == "video" ? "active" : ""}`}
+          onClick={() => setChannelVideo("video")}
+        >
+          Видео
+        </a>{" "}
+        |{" "}
+        <a
           className={`list-control ${
             channelVideo == "channels" ? "active" : ""
           }`}
@@ -58,14 +65,14 @@ export default function ChannelsList({ channels, topics }) {
         >
           Каналы
         </a>{" "}
-        |{" "}
-        <a
-          className={`list-control ${channelVideo == "video" ? "active" : ""}`}
-          onClick={() => setChannelVideo("video")}
-        >
-          Видео
-        </a>{" "}
         cортировать по:{" "}
+        <a
+          className={`list-control ${sortOrder == "lastVideo" ? "active" : ""}`}
+          onClick={() => setSortOrder("lastVideo")}
+        >
+          дате последнего видео
+        </a>{" "}
+        |{" "}
         <a
           className={`list-control ${
             sortOrder == "subscribers" ? "active" : ""
@@ -73,13 +80,6 @@ export default function ChannelsList({ channels, topics }) {
           onClick={() => setSortOrder("subscribers")}
         >
           популярности
-        </a>{" "}
-        |{" "}
-        <a
-          className={`list-control ${sortOrder == "lastVideo" ? "active" : ""}`}
-          onClick={() => setSortOrder("lastVideo")}
-        >
-          дате последнего видео
         </a>
       </div>
 

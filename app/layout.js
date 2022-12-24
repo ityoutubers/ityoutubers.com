@@ -17,7 +17,7 @@ function Navigation() {
         className={pathname == "/all-channels" ? "active" : ""}
         href="/all-channels"
       >
-        Все IT каналы
+        Все видео и каналы
       </Link>
     </div>
   );
