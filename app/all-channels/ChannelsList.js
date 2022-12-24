@@ -81,7 +81,7 @@ export default function ChannelsList({ channels, topics }) {
           }`}
           onClick={() => setSortOrder("subscribers")}
         >
-          популярности
+          подписчикам
         </a>
       </div>
 
