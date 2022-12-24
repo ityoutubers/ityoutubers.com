@@ -40,9 +40,12 @@
     background-size: cover;
     display: block;
   }
+  .video-title {
+    @apply mt-2;
+  }
   .video-title img {
     @apply m-0;
-    @apply mt-2;
+    @apply mt-1;
     @apply mr-2;
 
     clip-path: circle(50%);
@@ -54,6 +57,18 @@
     background-repeat: no-repeat;
     background-position-y: 3px;
     padding-left: 20px;
+  }
+  .ityoutubers-member {
+    position: relative;
+  }
+  .ityoutubers-member .ityoutubers-logo {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: url("/fav.png") center center;
+    background-size: cover;
   }
   .list-control {
     cursor: pointer;

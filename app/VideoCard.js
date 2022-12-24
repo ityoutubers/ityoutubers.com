@@ -9,6 +9,7 @@ export default function VideoCard({ channel }) {
         isMember ? "ityoutubers-member" : ""
       } text-sm leading-normal relative`}
     >
+      <span className="ityoutubers-logo"></span>
       <a
         className="video-thumbnail not-prose"
         href={`https://www.youtube.com/watch?v=${lastVideo.id}`}
