@@ -58,7 +58,8 @@ export default function RootLayout({ children }) {
                   src="/github-mark.svg"
                 />
               </a>{" "}
-              Сделано с помощью 💩 🪵 🌀 в 2022
+              <a href="https://boosty.to/seniorsoftwarevlogger">Поддержать</a>{" "}
+              развитие проекта. Сделано с помощью 💩 🪵 🌀 в 2022.{" "}
             </p>
           </div>
         </div>
