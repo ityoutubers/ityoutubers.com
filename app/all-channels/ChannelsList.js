@@ -13,6 +13,8 @@ import {
   orderByVideoDateDesc,
 } from "../../lib/channels";
 
+const threeMonthsAgo = Date.now() - 90 * 24 * 60 * 60000;
+
 export default function ChannelsList({ channels, topics }) {
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState("");
@@ -119,9 +121,15 @@ export default function ChannelsList({ channels, topics }) {
           id="videos"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
         >
-          {filteredChannels.map((channel) => (
-            <VideoCard key={`v-${channel.id}`} channel={channel} />
-          ))}
+          {filteredChannels
+            .filter(
+              (channel) =>
+                channel.lastVideo?.publishedAt &&
+                Date.parse(channel.lastVideo?.publishedAt) > threeMonthsAgo
+            )
+            .map((channel) => (
+              <VideoCard key={`v-${channel.id}`} channel={channel} />
+            ))}
         </div>
       )}
     </>
