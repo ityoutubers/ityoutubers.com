@@ -4,6 +4,8 @@ ITYouTubers — сообщество каналов с IT контентом. М
 
 ## Вы можете помочь!
 
+[Поддержать](https://boosty.to/seniorsoftwarevlogger) развитие проекта.
+
 ### Предложить канал
 Просто создайте тикет и мы добавим новый канал на сайт, если он соотвествует тематике https://github.com/ityoutubers/ityoutubers.com/issues/new/choose
 
