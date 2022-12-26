@@ -13,6 +13,13 @@ export default function ChannelsList({ channels, topics }) {
 
   const sortedChannels = channels.sort(orderBySubscribersDesc);
 
+  const topicsIds = sortedChannels.reduce((acc, cur) => {
+    acc = acc.concat(cur.topics);
+    return acc;
+  }, []);
+
+  const filteredTopics = topics.filter(({ id }) => topicsIds.includes(id));
+
   const options = {
     threshold: 0.3,
     keys: ["snippet.title", "snippet.description"],
@@ -52,13 +59,13 @@ export default function ChannelsList({ channels, topics }) {
       </div>
 
       <div className="topics mb-10">
-        {topics.map((t) => (
+        {filteredTopics.map(({ id, name }) => (
           <a
-            onClick={() => setTopic(topic == t.id ? "" : t.id)}
-            className={topic == t.id ? "topic active" : "topic"}
-            key={t.id}
+            onClick={() => setTopic(topic == id ? "" : id)}
+            className={topic == id ? "topic active" : "topic"}
+            key={id}
           >
-            {t.name}
+            {name}
           </a>
         ))}
       </div>
