@@ -13,6 +13,9 @@ function Navigation() {
       <Link className={pathname == "/" ? "active" : ""} href="/">
         Сообщество
       </Link>
+      <Link className={pathname == "/learn" ? "active" : ""} href="/learn">
+        Обучение
+      </Link>
       <Link
         className={pathname == "/all-channels" ? "active" : ""}
         href="/all-channels"
