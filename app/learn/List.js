@@ -35,7 +35,7 @@ export default function ChannelsList({ channels, topics }) {
   return (
     <>
       <p className="italic">
-        Здесь вы найдете обучающие материалы от участников сообщества.
+        Здесь вы найдете обучающие материалы и курсы от участников сообщества.
       </p>
 
       <div className="mb-5">
