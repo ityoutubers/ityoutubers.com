@@ -15,7 +15,7 @@
   "dependencies": {
     "@googleapis/youtube": "^8.0.1",
     "@notionhq/client": "^2.2.3",
-    "eslint": "8.30.0",
+    "eslint": "8.33.0",
     "eslint-config-next": "13.1.0",
     "fuse.js": "^6.6.2",
     "human-readable-numbers": "^0.9.5",
