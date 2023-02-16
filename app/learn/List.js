@@ -60,9 +60,9 @@ export default function ChannelsList({ channels, topics }) {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {channelsSortedBySubs.map(({ id, snippet, course }) => (
-          <div key={id} className={`channel-card`}>
+          <div key={id} className={`channel-card--learn`}>
             <div className="not-prose mr-5">
               <a href={`https://youtube.com/channel/${id}`}>
                 <Image

@@ -34,6 +34,10 @@
     @apply grid;
     grid-template-columns: 25% 75%;
   }
+  .channel-card--learn {
+    @apply grid;
+    grid-template-columns: 144px 75%;
+  }
   .video-thumbnail {
     background-position: center center;
     aspect-ratio: 16 / 9;

@@ -2108,6 +2108,11 @@
       "fdf508b3-6d87-44be-9cc0-7c398ebe4b3f",
       "ea9f89a1-4e4b-4453-a1f6-f2e9c0a19c90"
     ],
+    "course": {
+      "title": "Test Pro",
+      "url": "https://testpro.io/",
+      "description": "Test Pro offers affordable education for everyone. We are one of the best boot camps in the USA specializing only in Software Testing and Quality Assurance - both Manual and Automation (SDET) testing. We offer all the latest and greatest from Tech World."
+    },
     "isMember": true
   },
   {
