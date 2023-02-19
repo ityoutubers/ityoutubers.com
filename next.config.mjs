@@ -7,7 +7,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: false,
-    domains: ["yt3.ggpht.com", "i.ytimg.com"],
+    domains: ["yt3.ggpht.com", "*.ytimg.com"],
   },
   async redirects() {
     return [
