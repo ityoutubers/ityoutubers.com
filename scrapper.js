@@ -1,7 +1,8 @@
-require("dotenv").config({ path: "./.env.local" });
+import * as dotenv from "dotenv";
+import fs from "fs/promises";
+import { getTopics, getMembers, getYouTubeChannels } from "./lib/data.js";
 
-const { getTopics, getMembers, getYouTubeChannels } = require("./lib/data");
-const fs = require("fs/promises");
+dotenv.config({ path: "./.env.local" });
 
 Promise.all([
   getTopics()
