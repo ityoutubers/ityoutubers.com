@@ -7,7 +7,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="main-menu">
+    <div className="main-menu text-sm md:text-base lg:text-lg">
       <Link className={pathname == "/" ? "active" : ""} href="/">
         Сообщество
       </Link>

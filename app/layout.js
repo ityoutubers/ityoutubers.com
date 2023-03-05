@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className="prose max-w-none">
           <div className="container mx-auto pb-20 px-5">
-            <div className="grid md:grid-cols-2">
+            <div className="grid lg:grid-cols-2">
               <div className="not-prose">
                 <Link href="/">
                   <Image

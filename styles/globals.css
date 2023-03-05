@@ -19,7 +19,6 @@
     padding-top: 39px;
   }
   .main-menu a {
-    @apply text-lg;
     @apply mr-2;
     display: inline-block;
     border: 2px solid #fff;
@@ -36,7 +35,7 @@
   }
   .channel-card--learn {
     @apply grid;
-    grid-template-columns: 144px 75%;
+    grid-template-columns: 144px auto;
   }
   .video-thumbnail {
     background-position: center center;
