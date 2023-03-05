@@ -45,7 +45,11 @@ export default function ChannelsList({ channels, topics }) {
         ITYouTubers — сообщество каналов с IT контентом. Мы собрались, чтобы
         сделать IT контент лучше и доступнее. Мнения участников наверняка
         расходятся по многим вопросам, мы стараемся фокусироваться на IT. Если
-        вы хотите присоединиться к сообществу — напишите @soexpired в телеграме.
+        вы хотите присоединиться к сообществу —{" "}
+        <a href="https://boosty.to/ityoutubers">
+          https://boosty.to/ityoutubers
+        </a>
+        .
       </p>
 
       <div className="mb-5">
