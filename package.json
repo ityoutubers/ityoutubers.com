@@ -34,7 +34,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
-    "jest": "^29.3.1",
+    "jest": "^29.5.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   },
