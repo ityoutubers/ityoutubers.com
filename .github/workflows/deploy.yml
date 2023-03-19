@@ -30,6 +30,8 @@ jobs:
           
     - name: Dokku Deploy action
       uses: idoberko2/dokku-deploy-github-action@v1
+      env:
+        SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         dokku-host: 'dokku.seniorsoftwarevlogger.com'
@@ -55,6 +57,8 @@ jobs:
           
     - name: Dokku Deploy action
       uses: idoberko2/dokku-deploy-github-action@v1
+      env:
+        SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         dokku-host: 'dokku.seniorsoftwarevlogger.com'
