@@ -21,6 +21,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     env:
         USE_MOCK: true
+        SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
 
     steps:
     - uses: actions/checkout@v3
