@@ -3,7 +3,7 @@ import c from "../../data/channels.json";
 import m from "../../data/members.json";
 
 export async function fetchChannels() {
-  if (process.env.USE_MOCK) {
+  if (process.env.USE_MOCK == "true") {
     return [...m, ...c];
   }
 

@@ -2,7 +2,7 @@ import { getTopics } from "../../lib/data";
 import t from "../../data/topics.json";
 
 export async function fetchTopics() {
-  if (process.env.USE_MOCK) {
+  if (process.env.USE_MOCK == "true") {
     return t;
   }
 
