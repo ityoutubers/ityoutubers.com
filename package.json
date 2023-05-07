@@ -17,6 +17,7 @@
     "@notionhq/client": "^2.2.3",
     "@sentry/nextjs": "^7.40.0",
     "csv": "^6.2.8",
+    "dotenv": "^16.0.3",
     "encoding": "^0.1.13",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
