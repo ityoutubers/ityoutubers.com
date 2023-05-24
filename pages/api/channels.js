@@ -7,17 +7,9 @@ export async function fetchChannels() {
     return [...m, ...c];
   }
 
-  const [members, channels] = await Promise.all([
-    getYouTubeChannels(getMembers(true)).then((data) =>
-      data.map((i) => {
-        i["isMember"] = true;
-        return i;
-      })
-    ),
-    getYouTubeChannels(getMembers(false)),
-  ]).catch((e) => console.error(e));
+  const channels = await getYouTubeChannels().catch((e) => console.error(e));
 
-  return [...members, ...channels];
+  return channels;
 }
 
 export default async function handler(req, res) {
