@@ -6,12 +6,9 @@ import _ from "lodash";
 import { orderBySubscribersDesc } from "../../lib/channels";
 
 import members from "../../data/members.json";
-import channels from "../../data/channels.json";
 
 export default function Page() {
-  const channelsSortedBySubs = [...channels, ...members].sort(
-    orderBySubscribersDesc
-  );
+  const channelsSortedBySubs = [...members].sort(orderBySubscribersDesc);
 
   return (
     <>
