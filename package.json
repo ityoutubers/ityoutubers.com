@@ -27,6 +27,7 @@
     "fuse.js": "^6.6.2",
     "human-readable-numbers": "^0.9.5",
     "lodash": "^4.17.21",
+    "mongodb": "^5.5.0",
     "next": "^13.4.3",
     "openai": "^3.2.1",
     "p-throttle": "^5.0.0",

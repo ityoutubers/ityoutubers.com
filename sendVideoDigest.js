@@ -1,4 +1,4 @@
-import firebaseAdmin from "firebase-admin";
+import { MongoClient } from "mongodb";
 import fs from "fs/promises";
 import fsSync from "fs";
 import https from "https";
@@ -11,19 +11,17 @@ import generateSlides from "./lib/slideshow.js";
 
 dotenv.config({ path: "./.env.local", override: false });
 
-const serviceAccount = fsSync.readFileSync(process.env.FIREBASE_CREDENTIALS);
-firebaseAdmin.apps.length == 0 &&
-  firebaseAdmin.initializeApp({
-    credential: firebaseAdmin.credential.cert(JSON.parse(serviceAccount)),
-    databaseURL: process.env.FIREBASE_URL,
-    databaseAuthVariableOverride: {
-      uid: process.env.FIREBASE_AUTH_UID,
-    },
-  });
-
-const firebase = firebaseAdmin.database();
+const mongo = new MongoClient(process.env.MONGODB_URI);
+await mongo.connect();
 
 async function fetchVideosForDate(date) {
+  const oneDayAgo = date - 24 * 60 * 60000;
+  return mongo
+    .db("ityoutubers")
+    .collection("videos")
+    .find({ isMember: true, publishedAt: { $gte: new Date(oneDayAgo) } })
+    .toArray();
+
   return firebase
     .ref(`videos`)
     .orderByChild("publishedAt")
