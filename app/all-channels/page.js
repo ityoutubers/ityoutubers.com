@@ -2,7 +2,6 @@ import React from "react";
 
 import ChannelsList from "./ChannelsList";
 
-import { fetchChannels } from "../../pages/api/channels.js";
 import { fetchTopics } from "../../pages/api/topics.js";
 
 const secondsInHour = 60 * 60;
@@ -10,7 +9,9 @@ export const revalidate = secondsInHour;
 
 export default async function Page() {
   const [channels, topics] = await Promise.all([
-    fetchChannels(),
+    fetch("https://ityoutubers.com/api/channels")
+      .then((res) => res.json())
+      .catch(() => []),
     fetchTopics(),
   ]);
 
