@@ -11,7 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "update": "node ./scrapper.js"
   },
   "dependencies": {
     "@googleapis/youtube": "^8.0.1",

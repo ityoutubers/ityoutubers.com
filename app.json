@@ -1,1 +1,8 @@
-{}
+{
+  "cron": [
+    {
+      "command": "npm run update",
+      "schedule": "*/15 * * * *"
+    }
+  ]
+}
