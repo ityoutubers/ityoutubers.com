@@ -12,7 +12,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "update": "node ./scrapper.js"
+    "update": "node ./scrapper.js",
+    "video:digest": "node ./sendVideoDigest.js"
   },
   "dependencies": {
     "@googleapis/youtube": "^8.0.1",

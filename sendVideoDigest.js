@@ -21,21 +21,6 @@ async function fetchVideosForDate(date) {
     .collection("videos")
     .find({ isMember: true, publishedAt: { $gte: new Date(oneDayAgo) } })
     .toArray();
-
-  return firebase
-    .ref(`videos`)
-    .orderByChild("publishedAt")
-    .limitToLast(100)
-    .once("value")
-    .then((snapshot) => {
-      // Filter Videos by the publishedAt for the last 24 hours
-      const oneDayAgo = date - 24 * 60 * 60000;
-      const videos = Object.values(snapshot.val()).filter((video) => {
-        return Date.parse(video.publishedAt) > oneDayAgo && video.isMember;
-      });
-
-      return videos;
-    });
 }
 
 const downloadFile = async (url, localFilePath) =>

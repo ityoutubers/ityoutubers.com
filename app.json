@@ -3,6 +3,10 @@
     {
       "command": "npm run update",
       "schedule": "*/15 * * * *"
+    },
+    {
+      "command": "npm run video:digest",
+      "schedule": "0 18 * * *"
     }
   ]
 }
