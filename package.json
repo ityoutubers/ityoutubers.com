@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=19 <20"
+    "node": ">=19 <21"
   },
   "type": "module",
   "scripts": {
@@ -29,7 +29,7 @@
     "human-readable-numbers": "^0.9.5",
     "lodash": "^4.17.21",
     "mongodb": "^5.5.0",
-    "next": "^13.4.3",
+    "next": "^13.4.4",
     "openai": "^3.2.1",
     "p-throttle": "^5.0.0",
     "react": "18.2.0",
