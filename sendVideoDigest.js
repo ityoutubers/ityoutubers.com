@@ -46,6 +46,12 @@ const downloadFile = async (url, localFilePath) =>
       });
   });
 
+// create images and videos directories if they don't exist
+await Promise.all([
+  fs.mkdir("./images", { recursive: true }).catch(console.error),
+  fs.mkdir("./videos", { recursive: true }).catch(console.error),
+]);
+
 await fetchVideosForDate(Date.now())
   .then((videos) =>
     Promise.all(
