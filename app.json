@@ -1,12 +1,12 @@
 {
   "cron": [
     {
-      "command": "npm run update",
+      "command": "npm run update &>> /var/log/ityoutubers.com/cron.log",
       "schedule": "*/15 * * * *"
     },
     {
-      "command": "npm run video:digest",
-      "schedule": "0 18 * * *"
+      "command": "npm run video:digest &>> /var/log/ityoutubers.com/cron.log",
+      "schedule": "0 16 * * *"
     }
   ]
 }
