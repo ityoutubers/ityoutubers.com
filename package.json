@@ -24,7 +24,6 @@
     "encoding": "^0.1.13",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
-    "ffmpeg-static": "^5.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "fuse.js": "^6.6.2",
     "human-readable-numbers": "^0.9.5",
