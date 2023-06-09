@@ -6,9 +6,9 @@ const nextConfig = {
   output: "standalone",
   pageExtensions: ["ts", "tsx", "js", "jsx"],
   reactStrictMode: true,
-  sentry: {
-    hideSourceMaps: true,
-  },
+  // sentry: {
+  //   hideSourceMaps: true,
+  // },
   experimental: {
     appDir: true,
   },
