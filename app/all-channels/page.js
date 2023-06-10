@@ -9,7 +9,7 @@ export const revalidate = secondsInHour;
 
 export default async function Page() {
   const [channels, topics] = await Promise.all([
-    fetch("https://ityoutubers.com/api/channels", { next: { revalidate: 900 } })
+    fetch("https://ityoutubers.com/api/channels", { next: { revalidate: 900 }, signal: AbortSignal.timeout(5000) })
       .then((res) => res.json())
       .catch((error) => {
         console.error(error);
