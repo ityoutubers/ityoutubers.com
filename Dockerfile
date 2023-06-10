@@ -47,5 +47,12 @@ EXPOSE 3000
 ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
 
-RUN ls ./.next/standalone/server.js
-CMD ["node", "./.next/standalone/server.js"]
+RUN mkdir ./server-root
+COPY /public ./server-root/public
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY /app/.next/standalone ./server-root
+COPY /app/.next/static ./server-root/.next/static
+
+CMD ["node", "./server-root/.next/standalone/server.js"]
