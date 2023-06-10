@@ -45,6 +45,7 @@ RUN mkdir ./videos
 EXPOSE 3000
 
 ENV PORT 3000
+ENV HOSTNAME "0.0.0.0"
 
 RUN ls ./.next/standalone/server.js
 CMD ["node", "./.next/standalone/server.js"]
