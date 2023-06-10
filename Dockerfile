@@ -4,7 +4,7 @@ FROM node:19-alpine AS base
 FROM base AS deps
 
 RUN apk upgrade -U \ 
-    && apk add ca-certificates ffmpeg font-noto \
+  && apk add ca-certificates \
     && rm -rf /var/cache/*
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
@@ -38,15 +38,15 @@ RUN npm run build
 
 # Production image, copy all the files and run next
 FROM base AS runner
+
+RUN apk add --no-cache ffmpeg font-noto
+
 WORKDIR /app
 
 ENV NODE_ENV production
 ENV PORT 5000
 
 RUN npm install fluent-ffmpeg
-
-# Uncomment the following line in case you want to disable telemetry during runtime.
-# ENV NEXT_TELEMETRY_DISABLED 1
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/lib ./lib
