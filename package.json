@@ -13,7 +13,9 @@
     "lint": "next lint",
     "test": "jest",
     "update": "node ./scrapper.js",
-    "video:digest": "node ./sendVideoDigest.js"
+    "video:digest": "node ./sendVideoDigest.js",
+    "telegram:update": "node ./lib/telegram.js update",
+    "telegram:digest": "node ./lib/telegram.js digest"
   },
   "dependencies": {
     "@googleapis/youtube": "^8.0.1",
@@ -31,13 +33,16 @@
     "mongodb": "^5.5.0",
     "next": "^13.4.4",
     "openai": "^3.2.1",
+    "ora": "^6.3.1",
     "p-throttle": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rss-parser": "^3.12.0",
+    "rsshub": "^1.0.0-master.e9c3d48",
     "sharp": "^0.31.3",
     "swr": "^2.0.0",
-    "telegraf": "^4.12.2"
+    "telegraf": "^4.12.2",
+    "twitter-api-v2": "^1.15.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

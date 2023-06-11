@@ -1,11 +1,11 @@
-FROM node:19-alpine AS base
+FROM node:20-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
 
 RUN apk upgrade -U \ 
-  && apk add ca-certificates \
-    && rm -rf /var/cache/*
+  && apk add ca-certificates python3 make gcc g++ \
+  && rm -rf /var/cache/*
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
@@ -46,7 +46,6 @@ WORKDIR /app
 ENV NODE_ENV production
 ENV PORT 5000
 
-RUN npm install fluent-ffmpeg
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/lib ./lib
@@ -60,6 +59,7 @@ RUN mkdir ./videos
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
+COPY --from=deps /app/node_modules ./node_modules
 
 EXPOSE 5000
 
