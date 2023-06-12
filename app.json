@@ -10,11 +10,11 @@
     },
     {
       "command": "npm run video:digest 2>> /var/log/ityoutubers.com/cron.log",
-      "schedule": "0 16 * * *"
+      "schedule": "5 16 * * *"
     },
     {
       "command": "npm run telegram:digest 2>> /var/log/ityoutubers.com/cron.log",
-      "schedule": "0 16 * * *"
+      "schedule": "2 16 * * *"
     }
   ]
 }
