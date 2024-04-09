@@ -9,9 +9,7 @@ const nextConfig = {
   // sentry: {
   //   hideSourceMaps: true,
   // },
-  experimental: {
-    appDir: true,
-  },
+  appDir: true,
   images: {
     unoptimized: false,
     domains: ["yt3.ggpht.com", "*.ytimg.com"],
