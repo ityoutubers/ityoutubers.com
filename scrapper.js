@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
-import fs from "fs/promises";
-import { getTopics, getYouTubeChannels } from "./lib/data.js";
+import { getYouTubeChannels } from "./lib/data.js";
 
 dotenv.config({ path: "./.env.local" });
 

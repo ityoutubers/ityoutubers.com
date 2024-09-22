@@ -134,5 +134,6 @@ await fetchVideosForDate(Date.now())
         .catch(),
     ]);
   })
-  .then(() => process.exit(0))
   .catch(console.error);
+
+await mongo.close();
