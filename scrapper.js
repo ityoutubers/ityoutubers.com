@@ -11,5 +11,5 @@ await getYouTubeChannels()
       console.log("Process didn't exit, aborting");
       whyIsNodeRunning();
       process.abort();
-    }, 1000 * 10)
+    }, 1000 * 60)
   ); // 1 minute timeout, don't want to deal with it now
