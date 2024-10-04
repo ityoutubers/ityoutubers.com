@@ -18,7 +18,7 @@
     "telegram:digest": "node ./lib/telegram.js digest"
   },
   "dependencies": {
-    "@googleapis/youtube": "^8.0.1",
+    "@googleapis/youtube": "20.0.0",
     "@notionhq/client": "^2.2.3",
     "@sentry/nextjs": "^7.109.0",
     "csv": "^6.2.8",
